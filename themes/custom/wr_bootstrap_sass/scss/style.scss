@@ -1,0 +1,119 @@
+/*
+Theme Name: Bootstrap 4 Sass
+Description: Bootstrap 4 with Sass
+*/
+
+// import files
+@import "import";
+
+/* GENERAL STYLES
+-------------------------------------------------*/
+
+body {
+  background-color: transparent;
+  background-image: url(/sites/default/files/images/site_background.jpg);
+  background-position: center top;
+  background-size: auto;
+  background-attachment: fixed;
+  font-family: $font-family-base;
+  color: $accent-dark;
+}
+
+/* COLORS & FONTS
+--------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-header;
+}
+
+a {
+    color: $accent-dark;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.bg-inverse {
+    background: $primary-shade !important;
+}
+
+.site-footer {
+    background: $accent-shade !important;
+    color: $main-menu-shade;
+    a {
+      color: $main-menu-shade;
+    }
+}
+
+.menu--main li a {
+    color: $primary-shade;
+}
+
+.menu--account li a {
+    color: $primary-shade;
+}
+
+.site-name-slogan a {
+    text-decoration: none;
+}
+
+.card-group img {
+    margin: 0;
+    width: 100%;
+    height: auto;
+}
+
+.card-group .field--type-image {
+    margin: 0
+}
+
+.slick {
+    width: 100%;
+}
+
+.slick>div {
+    margin: 0 15px;
+}
+
+.region-content {
+  background-color: rgba(255,255,255,.4);
+}
+
+.highlighted .container-fluid {
+  padding: 0 !important;
+}
+
+.highlight, .highlight a {
+  font-size: $font-size-h1;
+  color: $pink !important;
+}
+
+.site-footer__bottom {
+  min-height: 5em;
+  @include media-breakpoint-up(md) {
+    min-height: 2em;
+  }
+  #block-socialicons {
+    float: right;
+    margin-top: 2em;
+    @include media-breakpoint-up(md) {
+      margin-top: -0.5em;
+    }
+      ul {
+      list-style: none;
+      display: inline;
+    }
+    li {
+      float: left;
+      a {
+        font-size: $font-size-h3;
+        padding: 0 .5em;
+        line-height: 1.5em;
+      }
+    }
+  }
+}
