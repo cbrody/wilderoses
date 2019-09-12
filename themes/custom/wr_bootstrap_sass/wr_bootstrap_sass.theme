@@ -30,3 +30,7 @@ function wr_bootstrap_sass_form_system_theme_settings_alter(&$form, FormStateInt
       'bg-transparent' => t('Transparent'),
   );
 }
+
+function wr_bootstrap_sass_commerce_cart_empty_block() {
+  return '';
+}
