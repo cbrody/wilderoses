@@ -31,12 +31,14 @@ h1.title:first-letter {
     font-family: "Nancy";
     vertical-align: text-top;
     font-size: 6rem;
-    line-height: 7rem;
-    padding: 1rem 0 0 0;
+    line-height: 6rem;
+    float: left;
 }
 
 h1.title {
-  line-height: 1rem;
+  padding-top: 1rem;
+  line-height: 2rem;
+  @extend .clearfix;
 }
 
 a {
