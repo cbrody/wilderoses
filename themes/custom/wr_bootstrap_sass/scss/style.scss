@@ -107,6 +107,26 @@ img {
   color: $pink !important;
 }
 
+.audiofield-audiojs {
+  max-width: 100%;
+  .play-pauseZ {
+    border: none;
+  }
+  .scrubberZ {
+    max-width: 33%;
+  }
+  .timeZ {
+    max-width: 33%;
+    border: none;
+  }
+}
+
+.audiofield-audiojs-frame ol {
+  list-style: none;
+  max-width: 100%;
+}
+
+/***** FOOTER ******/
 .site-footer__bottom {
   min-height: 5em;
   @include media-breakpoint-up(md) {
