@@ -5,6 +5,17 @@
 
 @import url("https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic,900,900italic");
 @import url("https://fonts.googleapis.com/css?family=Vollkorn:400,300,500,600,700,800,900");
+@font-face{
+  font-family:"Lombardic";
+  src:url("../fonts/Lombardic/c3fdf744-f433-47e1-9102-f1b276b03dd6.eot?#iefix");
+  src:url("../fonts/Lombardic/c3fdf744-f433-47e1-9102-f1b276b03dd6.eot?#iefix") format("eot"),url("../fonts/Lombardic/3e96a951-c8ee-4721-8957-bc4ddbf2298e.woff2") format("woff2"),url("../fonts/Lombardic/58227789-daed-4689-978b-0d038cb07779.woff") format("woff"),url("../fonts/Lombardic/e97035d0-3055-48d8-8820-a484e6cddaee.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'Nancy';
+  src: url('../fonts/Nancy/3A19B1_0_0.eot');
+  src: url('../fonts/Nancy/3A19B1_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/Nancy/3A19B1_0_0.woff2') format('woff2'),url('../fonts/Nancy/3A19B1_0_0.woff') format('woff'),url('../fonts/Nancy/3A19B1_0_0.ttf') format('truetype');
+}
+
 // font families
 $font-lato: 'Lato',
 Arial,

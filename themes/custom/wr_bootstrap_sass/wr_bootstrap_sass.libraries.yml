@@ -1,6 +1,6 @@
 global-styling:
   version: VERSION
-  js: 
+  js:
     js/popper.min.js: {}
     js/bootstrap.min.js: {}
     js/global.js: {}
@@ -10,3 +10,9 @@ global-styling:
   dependencies:
     - core/jquery
     - core/drupal
+
+fonts:
+  css:
+    theme:
+      - '//fast.fonts.net/lt/1.css?apiType=css&c=e542596c-aa5d-4e4c-b5fd-2405ecd70876&fontids=1422702': {type: internal}
+      - '//hello.myfonts.net/count/3a19b1': {type: internal}
