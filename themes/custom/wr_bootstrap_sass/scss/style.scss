@@ -154,16 +154,17 @@ img {
 }
 
 .field-slideshow-items {
-  height: 700px;
+  height: 600px;
 }
 
-.cycle-slideshow img {
-  width: 100%;
-  height: auto
+.cycle-slide img {
+  width: auto !important;
+  height: 400px;
 }
 
 .cycle-pager-after {
   position: absolute;
   z-index: 999;
   bottom: 1rem;
+  overflow-x: auto;
 }
