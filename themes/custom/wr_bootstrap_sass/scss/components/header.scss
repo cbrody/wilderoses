@@ -80,7 +80,8 @@
 
 @media (max-width: 768px) {
     .navbar-toggleable-sm .navbar-nav .nav-item+.nav-item,
-    .navbar-toggleable-xs.collapse.in .navbar-nav .nav-item {
+    .navbar-toggleab.collapse.in .navbar-nav .nav-item,
+    .navbar-toggler {
         margin-left: 0;
         float: none;
         border-bottom: $gray-100;
@@ -88,9 +89,9 @@
     #CollapsingNavbar {
       margin-left: 5%;
     }
-    li.nav-item {
-       &:after {
-         content: none !important;
-       }
-     }
+    .navbar-brand img {
+      margin-right: 0;
+      max-width: 210px;
+      float: left;
+    }
 }
