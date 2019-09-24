@@ -43,3 +43,6 @@ sites/simpletest
 
 # Ignore node
 node_modules
+
+# Ignore stats 
+stats
