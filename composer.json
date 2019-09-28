@@ -19,7 +19,8 @@
         "drupal/colorbox": "^1.4",
         "drupal/field_slideshow": "^3.0@beta",
         "drupal/juicebox": "^2.0@beta",
-        "drupal/commerce_shipping": "^2.0@beta"
+        "drupal/commerce_shipping": "^2.0@beta",
+        "drupal/google_analytics": "^3.0"
     },
     "replace": {
         "drupal/core": "^8.7"
