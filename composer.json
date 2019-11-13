@@ -20,27 +20,27 @@
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "^1.6.5",
         "drupal-composer/drupal-scaffold": "^2.5",
+        "drupal/admin_toolbar": "^2.0",
+        "drupal/audiofield": "^1.9",
+        "drupal/bootstrap_barrio": "^4.22",
+        "drupal/bootstrap_sass": "^1.9",
+        "drupal/colorbox": "^1.4",
+        "drupal/commerce": "^2.14",
+        "drupal/commerce_paypal": "^1.0@beta",
+        "drupal/commerce_shipping": "^2.0@beta",
         "drupal/console": "^1.0.2",
         "drupal/core": "^8.7.0",
+        "drupal/field_slideshow": "^3.0@beta",
+        "drupal/fontawesome": "^2.14",
+        "drupal/google_analytics": "^3.0",
+        "drupal/imagezoom": "2.x-dev",
+        "drupal/juicebox": "^2.0@beta",
+        "drupal/pathauto": "^1.4",
         "drush/drush": "^9.0.0",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3",
-        "zaporylie/composer-drupal-optimizations": "^1.0",
-        "drupal/bootstrap_barrio": "^4.22",
-        "drupal/bootstrap_sass": "^1.9",
-        "drupal/admin_toolbar": "^1.27",
-        "drupal/commerce": "^2.14",
-        "drupal/commerce_paypal": "^1.0@beta",
-        "drupal/imagezoom": "2.x-dev",
-        "drupal/pathauto": "^1.4",
-        "drupal/fontawesome": "^2.14",
-        "drupal/audiofield": "^1.9",
-        "drupal/colorbox": "^1.4",
-        "drupal/field_slideshow": "^3.0@beta",
-        "drupal/juicebox": "^2.0@beta",
-        "drupal/commerce_shipping": "^2.0@beta",
-        "drupal/google_analytics": "^3.0"
+        "zaporylie/composer-drupal-optimizations": "^1.0"
     },
     "require-dev": {
         "webflo/drupal-core-require-dev": "^8.7.0"
@@ -53,7 +53,7 @@
     "config": {
         "sort-packages": true,
         "platform": {
-          "php": "^7.3.0"
+          "php": "7.3"
         }
     },
     "autoload": {
