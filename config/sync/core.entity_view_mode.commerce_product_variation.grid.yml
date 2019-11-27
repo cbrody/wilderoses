@@ -1,0 +1,10 @@
+uuid: 136a0707-d4b9-4eea-b7f2-5b014bb0c5c1
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+id: commerce_product_variation.grid
+label: Grid
+targetEntityType: commerce_product_variation
+cache: true

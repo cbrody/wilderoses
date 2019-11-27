@@ -1,0 +1,20 @@
+uuid: 31bfc51f-6e9f-49fa-aeef-ae2bf1b479f9
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: AeW1SEDgb1OTQACAWGhzvMknMYAJlcZu0jljfeU3oso
+name: Blog
+type: article
+description: 'Blog posts, with option to promote to home page'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

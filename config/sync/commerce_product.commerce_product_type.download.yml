@@ -1,0 +1,12 @@
+uuid: a377f76b-1d9d-4eff-baab-c4f9ad3b40a3
+langcode: en
+status: true
+dependencies: {  }
+id: download
+label: 'Free download'
+description: ''
+variationType: download
+multipleVariations: false
+injectVariationFields: false
+traits: {  }
+locked: false

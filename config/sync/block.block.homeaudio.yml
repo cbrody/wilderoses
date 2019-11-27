@@ -1,0 +1,31 @@
+uuid: f2646ac0-ee7e-4eee-a0f7-0aeb26c2d9f9
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:audio:d89803c2-d39c-4014-a805-95dfdc7815c0'
+  module:
+    - block_content
+    - system
+  theme:
+    - wr_bootstrap_sass
+id: homeaudio
+theme: wr_bootstrap_sass
+region: featured_bottom_second
+weight: -10
+provider: null
+plugin: 'block_content:d89803c2-d39c-4014-a805-95dfdc7815c0'
+settings:
+  id: 'block_content:d89803c2-d39c-4014-a805-95dfdc7815c0'
+  label: 'Home audio'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,22 @@
+uuid: 0dc46716-af01-4845-95f4-8e4524d0b940
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - wr_bootstrap_sass
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: wr_bootstrap_sass_help
+theme: wr_bootstrap_sass
+region: content
+weight: -5
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

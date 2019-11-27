@@ -1,0 +1,21 @@
+uuid: 0995ac77-02dc-4d20-a54b-8ec76431b926
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_cart
+  theme:
+    - wr_bootstrap_sass
+id: cart
+theme: wr_bootstrap_sass
+region: primary_menu
+weight: -7
+provider: null
+plugin: commerce_cart
+settings:
+  id: commerce_cart
+  label: Cart
+  provider: commerce_cart
+  label_display: '0'
+  dropdown: false
+visibility: {  }

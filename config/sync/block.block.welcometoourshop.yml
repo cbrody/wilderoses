@@ -1,0 +1,31 @@
+uuid: 27a61067-49f3-49cb-99b1-f5ca243dfad4
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:096cd7f3-f648-48e2-a986-4d195d2f68ab'
+  module:
+    - block_content
+    - system
+  theme:
+    - wr_bootstrap_sass
+id: welcometoourshop
+theme: wr_bootstrap_sass
+region: content
+weight: -3
+provider: null
+plugin: 'block_content:096cd7f3-f648-48e2-a986-4d195d2f68ab'
+settings:
+  id: 'block_content:096cd7f3-f648-48e2-a986-4d195d2f68ab'
+  label: 'Welcome to our market'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /shop
+    negate: false
+    context_mapping: {  }

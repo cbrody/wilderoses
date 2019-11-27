@@ -1,0 +1,60 @@
+uuid: da5422da-68fc-4598-84f4-947eab0ad0d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.shirt
+    - core.entity_view_mode.commerce_product.full
+    - field.field.commerce_product.shirt.body
+    - field.field.commerce_product.shirt.field_image
+    - field.field.commerce_product.shirt.stores
+    - field.field.commerce_product.shirt.variations
+  module:
+    - commerce_product
+    - imagezoom
+    - text
+id: commerce_product.shirt.full
+targetEntityType: commerce_product
+bundle: shirt
+mode: full
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_image:
+    weight: 1
+    label: hidden
+    settings:
+      imagezoom_zoom_type: lens
+      imagezoom_display_style: medium
+      imagezoom_zoom_style: ''
+      imagezoom_disable: true
+      imagezoom_disable_width: 480
+      imagezoom_additional: "responsive: true\r\nlensShape: round\r\nlensBorder: 0\r\nlensSize: 220\r\ncursor: pointer"
+    third_party_settings: {  }
+    type: imagezoom
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: 0
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  variations:
+    type: commerce_add_to_cart
+    weight: 10
+    label: hidden
+    settings:
+      combine: true
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  stores: true
+  uid: true

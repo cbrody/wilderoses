@@ -1,0 +1,30 @@
+uuid: d7a06569-f3de-4d73-ab30-0d3ad105c66e
+langcode: en
+status: false
+dependencies:
+  module:
+    - node
+    - system
+  theme:
+    - wr_bootstrap_sass
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: wr_bootstrap_sass_breadcrumbs
+theme: wr_bootstrap_sass
+region: content
+weight: -10
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      article: article
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

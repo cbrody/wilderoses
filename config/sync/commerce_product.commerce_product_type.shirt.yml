@@ -1,0 +1,12 @@
+uuid: 4f650aea-8ed4-4fc5-82df-bab6f93aba86
+langcode: en
+status: true
+dependencies: {  }
+id: shirt
+label: Shirt
+description: ''
+variationType: size
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

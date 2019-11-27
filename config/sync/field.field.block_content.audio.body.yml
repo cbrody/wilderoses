@@ -1,0 +1,22 @@
+uuid: 749bf41e-bef0-4744-844f-0cecc11d093a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.audio
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.audio.body
+field_name: body
+entity_type: block_content
+bundle: audio
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

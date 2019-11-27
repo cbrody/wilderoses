@@ -1,0 +1,25 @@
+uuid: f1aaa157-ae67-4ea9-9469-1672c19c93b3
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c7cb7b3e-cf71-4648-bbf8-9bbeb3aa5e87'
+  module:
+    - block_content
+  theme:
+    - wr_bootstrap_sass
+id: socialicons
+theme: wr_bootstrap_sass
+region: footer_fifth
+weight: -9
+provider: null
+plugin: 'block_content:c7cb7b3e-cf71-4648-bbf8-9bbeb3aa5e87'
+settings:
+  id: 'block_content:c7cb7b3e-cf71-4648-bbf8-9bbeb3aa5e87'
+  label: 'Social icons'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

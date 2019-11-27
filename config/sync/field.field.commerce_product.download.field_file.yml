@@ -1,0 +1,27 @@
+uuid: f00de37a-85af-44bd-b567-f77f9d944d58
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.download
+    - field.storage.commerce_product.field_file
+  module:
+    - file
+id: commerce_product.download.field_file
+field_name: field_file
+entity_type: commerce_product
+bundle: download
+label: File
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'downloads/[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt pdf doc docx'
+  max_filesize: ''
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

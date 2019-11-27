@@ -1,0 +1,15 @@
+uuid: 99da3972-7f03-4cba-a6dd-9986f91e7dbb
+langcode: en
+status: true
+dependencies: {  }
+name: full_width
+label: 'Full width'
+effects:
+  39422e18-3f58-4ea1-997f-c26cc66f58bd:
+    uuid: 39422e18-3f58-4ea1-997f-c26cc66f58bd
+    id: image_scale
+    weight: 1
+    data:
+      width: 1400
+      height: null
+      upscale: false

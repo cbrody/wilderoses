@@ -1,0 +1,70 @@
+uuid: 33d15992-edf2-4f4a-8bf4-b6e7ca10ae26
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.download
+    - core.entity_view_mode.commerce_product.full
+    - field.field.commerce_product.download.body
+    - field.field.commerce_product.download.field_file
+    - field.field.commerce_product.download.field_image
+    - field.field.commerce_product.download.stores
+    - field.field.commerce_product.download.variations
+  module:
+    - file
+    - imagezoom
+    - text
+id: commerce_product.download.full
+targetEntityType: commerce_product
+bundle: download
+mode: full
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_file:
+    weight: 3
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_image:
+    weight: 2
+    label: hidden
+    settings:
+      imagezoom_zoom_type: lens
+      imagezoom_display_style: medium
+      imagezoom_zoom_style: ''
+      imagezoom_disable: true
+      imagezoom_disable_width: 480
+      imagezoom_additional: "responsive: true\r\nlensShape: round\r\nlensBorder: 0\r\nlensSize: 220\r\ncursor: pointer"
+    third_party_settings: {  }
+    type: imagezoom
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: 0
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  variations:
+    type: entity_reference_entity_view
+    weight: 4
+    region: content
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+hidden:
+  created: true
+  stores: true
+  uid: true

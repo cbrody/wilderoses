@@ -1,0 +1,11 @@
+uuid: 9eb94576-5aa9-468d-8660-fdaff57f7445
+langcode: en
+status: true
+dependencies: {  }
+id: size
+label: Size
+orderItemType: default
+generateTitle: true
+traits:
+  - purchasable_entity_shippable
+locked: false

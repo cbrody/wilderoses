@@ -1,0 +1,31 @@
+uuid: 2bd7d68c-e7e1-469b-845a-b68904ec9800
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:1eeca268-e241-4042-a145-aa69c0b04cb5'
+  module:
+    - block_content
+    - system
+  theme:
+    - wr_bootstrap_sass
+id: contactblock
+theme: wr_bootstrap_sass
+region: content
+weight: -8
+provider: null
+plugin: 'block_content:1eeca268-e241-4042-a145-aa69c0b04cb5'
+settings:
+  id: 'block_content:1eeca268-e241-4042-a145-aa69c0b04cb5'
+  label: 'Contact block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /contact
+    negate: false
+    context_mapping: {  }

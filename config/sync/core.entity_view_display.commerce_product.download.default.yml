@@ -1,0 +1,65 @@
+uuid: 7dc7da6e-bbad-4c14-9a16-776299536e76
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.download
+    - field.field.commerce_product.download.body
+    - field.field.commerce_product.download.field_file
+    - field.field.commerce_product.download.field_image
+    - field.field.commerce_product.download.stores
+    - field.field.commerce_product.download.variations
+  module:
+    - file
+    - image
+    - text
+id: commerce_product.download.default
+targetEntityType: commerce_product
+bundle: download
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_file:
+    weight: 3
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_image:
+    weight: 2
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: content
+    third_party_settings: {  }
+    type: image
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: 0
+    region: content
+    settings:
+      link_to_entity: true
+    third_party_settings: {  }
+  variations:
+    type: entity_reference_entity_view
+    weight: 4
+    region: content
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+hidden:
+  created: true
+  stores: true
+  uid: true

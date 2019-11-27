@@ -1,0 +1,31 @@
+uuid: feef9b3f-072c-4005-8a37-4aae8cacf0c7
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c13d61aa-567c-45ad-afea-27c9812e875c'
+  module:
+    - block_content
+    - system
+  theme:
+    - wr_bootstrap_sass
+id: reviews
+theme: wr_bootstrap_sass
+region: content
+weight: -1
+provider: null
+plugin: 'block_content:c13d61aa-567c-45ad-afea-27c9812e875c'
+settings:
+  id: 'block_content:c13d61aa-567c-45ad-afea-27c9812e875c'
+  label: Reviews
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /about
+    negate: false
+    context_mapping: {  }

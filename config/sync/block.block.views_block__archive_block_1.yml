@@ -1,0 +1,38 @@
+uuid: 584f5dc0-f562-4441-be8b-fd2678dbfe45
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.archive
+  module:
+    - node
+    - system
+    - views
+  theme:
+    - wr_bootstrap_sass
+id: views_block__archive_block_1
+theme: wr_bootstrap_sass
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'views_block:archive-block_1'
+settings:
+  id: 'views_block:archive-block_1'
+  label: 'Blog archive'
+  provider: views
+  label_display: visible
+  views_label: 'Blog archive'
+  items_per_page: none
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      article: article
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  request_path:
+    id: request_path
+    pages: "/blog*\r\n"
+    negate: false
+    context_mapping: {  }

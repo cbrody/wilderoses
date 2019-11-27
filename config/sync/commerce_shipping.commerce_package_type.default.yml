@@ -1,0 +1,14 @@
+uuid: df6d2bb3-078e-4a5a-a929-41ecd7e1f02d
+langcode: en
+status: true
+dependencies: {  }
+id: default
+label: Default
+dimensions:
+  length: '120'
+  width: '120'
+  height: '10'
+  unit: mm
+weight:
+  number: '50'
+  unit: g

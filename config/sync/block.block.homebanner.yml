@@ -1,0 +1,31 @@
+uuid: 91b8caa6-dcb0-40ac-8418-280b344d5dc6
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:003d1d92-b4f4-47d1-b82e-c6e82536a557'
+  module:
+    - block_content
+    - system
+  theme:
+    - wr_bootstrap_sass
+id: homebanner
+theme: wr_bootstrap_sass
+region: highlighted
+weight: 0
+provider: null
+plugin: 'block_content:003d1d92-b4f4-47d1-b82e-c6e82536a557'
+settings:
+  id: 'block_content:003d1d92-b4f4-47d1-b82e-c6e82536a557'
+  label: 'Home banner'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

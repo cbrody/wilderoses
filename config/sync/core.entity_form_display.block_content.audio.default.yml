@@ -1,0 +1,41 @@
+uuid: 44332b5c-b267-45b4-a2aa-2e2088b638ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.audio
+    - field.field.block_content.audio.body
+    - field.field.block_content.audio.field_audio
+  module:
+    - file
+    - text
+id: block_content.audio.default
+targetEntityType: block_content
+bundle: audio
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 26
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_audio:
+    weight: 28
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

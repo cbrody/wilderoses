@@ -1,0 +1,33 @@
+uuid: 94a52957-7bd5-49ea-bc9f-fb955f74d0f1
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_paypal
+id: paypal
+label: PayPal
+weight: null
+plugin: paypal_checkout
+configuration:
+  client_id: Aeg4_KRz8X_aigwnc6IqkjHKSFyV6GqIeT2pT9tu4jD8xqvEsa-__zlz8JAMcYiT869ZKAiolo4W4wWY
+  secret: EGlXKmDLKSyEwRR9wm1SIM0CBU-W1SxCz9JpnVgum7iqlZTEVmnZmkv06wJCuz_xc3oFm02PmKDa7eoF
+  intent: capture
+  disable_funding: {  }
+  disable_card: {  }
+  shipping_preference: set_provided_address
+  update_billing_profile: true
+  update_shipping_profile: true
+  style:
+    layout: vertical
+    color: gold
+    shape: rect
+    label: paypal
+    tagline: false
+  enable_on_cart: false
+  collect_billing_information: true
+  display_label: PayPal
+  mode: live
+  payment_method_types:
+    - credit_card
+conditions: {  }
+conditionOperator: AND
