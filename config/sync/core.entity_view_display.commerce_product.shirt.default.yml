@@ -3,12 +3,10 @@ langcode: en
 status: true
 dependencies:
   config:
-    - commerce_product.commerce_product_type.shirt
-    - field.field.commerce_product.shirt.body
-    - field.field.commerce_product.shirt.field_image
-    - field.field.commerce_product.shirt.stores
-    - field.field.commerce_product.shirt.variations
-    - image.style.large
+    0: commerce_product.commerce_product_type.shirt
+    1: field.field.commerce_product.shirt.body
+    2: field.field.commerce_product.shirt.field_image
+    5: image.style.large
   module:
     - commerce_product
     - image

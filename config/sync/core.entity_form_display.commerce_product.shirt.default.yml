@@ -6,8 +6,6 @@ dependencies:
     - commerce_product.commerce_product_type.shirt
     - field.field.commerce_product.shirt.body
     - field.field.commerce_product.shirt.field_image
-    - field.field.commerce_product.shirt.stores
-    - field.field.commerce_product.shirt.variations
     - image.style.thumbnail
   module:
     - commerce
@@ -26,6 +24,7 @@ content:
       rows: 9
       summary_rows: 3
       placeholder: ''
+      show_summary: false
     third_party_settings: {  }
     region: content
   created:
@@ -81,6 +80,7 @@ content:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
+      match_limit: 10
     third_party_settings: {  }
 hidden:
   variations: true

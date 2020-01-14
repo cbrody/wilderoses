@@ -7,8 +7,6 @@ dependencies:
     - field.field.commerce_product.download.body
     - field.field.commerce_product.download.field_file
     - field.field.commerce_product.download.field_image
-    - field.field.commerce_product.download.stores
-    - field.field.commerce_product.download.variations
     - image.style.thumbnail
   module:
     - commerce
@@ -29,6 +27,7 @@ content:
       rows: 9
       summary_rows: 3
       placeholder: ''
+      show_summary: false
     third_party_settings: {  }
     region: content
   created:
@@ -91,6 +90,7 @@ content:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
+      match_limit: 10
     third_party_settings: {  }
   variations:
     type: commerce_product_single_variation
