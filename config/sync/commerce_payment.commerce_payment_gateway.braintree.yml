@@ -1,0 +1,28 @@
+uuid: 56c39091-977f-418f-ad95-8898323ba126
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_braintree
+id: braintree
+label: Braintree
+weight: null
+plugin: braintree_hostedfields
+configuration:
+  merchant_id: tywvybt73z7zb2vy
+  public_key: tqjwnfb6n6qnczmz
+  private_key: 7c5fc487b18c8001909cf963b19596b9
+  merchant_account_id:
+    GBP: tywvybt73z7zb2vy
+  display_label: Braintree
+  mode: test
+  payment_method_types:
+    - credit_card
+  collect_billing_information: true
+conditions:
+  -
+    plugin: order_variation_type
+    configuration:
+      variation_types:
+        - subscriber
+conditionOperator: AND

@@ -1,0 +1,12 @@
+uuid: 45c496d0-0840-4ca6-b0ff-3d0c188930e3
+langcode: en
+status: true
+dependencies: {  }
+id: patron
+label: Patron
+description: ''
+variationType: subscriber
+multipleVariations: true
+injectVariationFields: true
+traits: {  }
+locked: false

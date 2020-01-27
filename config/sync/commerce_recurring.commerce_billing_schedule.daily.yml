@@ -1,0 +1,23 @@
+uuid: 371a9407-a16e-44ce-995b-d6071164af78
+langcode: en
+status: true
+dependencies: {  }
+id: daily
+label: Daily
+displayLabel: 'Test daily'
+billingType: prepaid
+retrySchedule:
+  - 1
+  - 3
+  - 5
+unpaidSubscriptionState: canceled
+plugin: fixed
+configuration:
+  trial_interval: {  }
+  interval:
+    number: 1
+    unit: day
+  start_month: 1
+  start_day: 1
+prorater: full_price
+proraterConfiguration: {  }

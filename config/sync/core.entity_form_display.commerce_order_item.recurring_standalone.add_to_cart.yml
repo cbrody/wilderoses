@@ -1,0 +1,37 @@
+uuid: 082e39c6-8802-43f8-b8d6-5ef60cd07b95
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_order.commerce_order_item_type.recurring_standalone
+    - core.entity_form_mode.commerce_order_item.add_to_cart
+    - field.field.commerce_order_item.recurring_standalone.billing_period
+    - field.field.commerce_order_item.recurring_standalone.subscription
+  module:
+    - commerce_order
+id: commerce_order_item.recurring_standalone.add_to_cart
+targetEntityType: commerce_order_item
+bundle: recurring_standalone
+mode: add_to_cart
+content:
+  quantity:
+    type: commerce_quantity
+    weight: 1
+    region: content
+    settings:
+      step: '1'
+      placeholder: ''
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  billing_period: true
+  created: true
+  subscription: true
+  unit_price: true

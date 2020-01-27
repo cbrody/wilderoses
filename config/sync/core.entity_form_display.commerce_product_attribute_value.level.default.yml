@@ -1,0 +1,31 @@
+uuid: a6fbec68-b3c9-4e97-8951-4633d151d0c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_attribute.level
+    - field.field.commerce_product_attribute_value.level.field_details
+  module:
+    - text
+id: commerce_product_attribute_value.level.default
+targetEntityType: commerce_product_attribute_value
+bundle: level
+mode: default
+content:
+  field_details:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  name:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }
