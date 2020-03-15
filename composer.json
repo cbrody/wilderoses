@@ -35,10 +35,13 @@
         "drupal/field_slideshow": "^3.0@beta",
         "drupal/fontawesome": "^2.14",
         "drupal/google_analytics": "^3.0",
+        "drupal/honeypot": "^1.30",
         "drupal/imagezoom": "2.x-dev",
         "drupal/juicebox": "^2.0@beta",
         "drupal/pathauto": "^1.4",
-        "drupal/paypal_subscriptions": "^1.0@alpha",
+        "drupal/paypal_subscriptions": "^1.0",
+        "drupal/recaptcha": "^2.4",
+        "drupal/swiftmailer": "^1.0@beta",
         "drush/drush": "^9.0.0",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
@@ -96,6 +99,11 @@
                 ".editorconfig": "../.editorconfig",
                 ".gitattributes": "../.gitattributes"
             }
+        },
+        "patches": {
+          "drupal/captcha": {
+            "Undefined variable type in Captcha Examples": "https://www.drupal.org/files/issues/2019-10-30/3091082-2.patch"
+          }
         }
     }
 }
