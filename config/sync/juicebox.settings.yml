@@ -1,8 +1,8 @@
 apply_markup_filter: true
 enable_cors: false
 translate_interface: false
-base_languagelist: ''
-juicebox_multisize_small: juicebox_small
+base_languagelist: 'Show Thumbnails|Hide Thumbnails|Expand Gallery|Close Gallery|Open Image in New Window|Next Image|Previous Image|Play Audio|Pause Audio|Show Information|Hide Information|Start AutoPlay|Stop AutoPlay|AutoPlay ON|AutoPlay OFF|Go Back|Buy this Image|Share on Facebook|Share on Twitter|Share on Google+|Share on Pinterest|Share on Tumblr|of'
+juicebox_multisize_small: juicebox_medium
 juicebox_multisize_medium: juicebox_medium
 juicebox_multisize_large: juicebox_large
 _core:

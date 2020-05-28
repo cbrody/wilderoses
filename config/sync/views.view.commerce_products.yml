@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.commerce_product.grid
     - field.storage.commerce_product.field_image
     - image.style.large
     - image.style.medium
@@ -870,11 +871,11 @@ display:
         type: grid
         options:
           uses_fields: false
-          columns: 2
+          columns: 3
           automatic_width: false
           alignment: horizontal
           col_class_default: false
-          col_class_custom: 'col col-12 col-md-6'
+          col_class_custom: 'col-12 col-md-4'
           row_class_default: false
           row_class_custom: row
       defaults:
@@ -892,7 +893,7 @@ display:
         type: 'entity:commerce_product'
         options:
           relationship: none
-          view_mode: default
+          view_mode: grid
       fields:
         title:
           id: title
@@ -1127,4 +1128,3 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.commerce_product.field_image'
-        - 'config:field.storage.commerce_product.variations'

@@ -1,0 +1,10 @@
+uuid: c63283a9-95ff-49c3-89cb-468395e17b30
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+id: commerce_product.grid
+label: Grid
+targetEntityType: commerce_product
+cache: true

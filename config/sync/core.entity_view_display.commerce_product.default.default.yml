@@ -6,6 +6,7 @@ dependencies:
     - commerce_product.commerce_product_type.default
     - field.field.commerce_product.default.body
     - field.field.commerce_product.default.field_image
+    - image.style.medium
   module:
     - commerce_product
     - image
@@ -29,7 +30,7 @@ content:
     weight: -4
     label: hidden
     settings:
-      image_style: ''
+      image_style: medium
       image_link: content
     third_party_settings: {  }
     type: image

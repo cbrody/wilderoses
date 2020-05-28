@@ -6,7 +6,7 @@ dependencies:
     - field.field.media.audio.field_media_audio_file
     - media.type.audio
   module:
-    - file
+    - audiofield
 _core:
   default_config_hash: SWf3MLdbEKvlx4Vs6iPwDHu5pr1aKT0SJmgp8no73-k
 id: media.audio.default
@@ -15,14 +15,33 @@ bundle: audio
 mode: default
 content:
   field_media_audio_file:
-    type: file_audio
+    type: audiofield_audioplayer
     weight: 0
     label: visually_hidden
     settings:
-      controls: true
-      autoplay: false
-      loop: false
-      multiple_file_display_type: tags
+      audio_player: audiojs_audio_player
+      audio_player_jplayer_theme: none
+      audio_player_wavesurfer_audiorate: '1'
+      audio_player_wavesurfer_autocenter: '1'
+      audio_player_wavesurfer_bargap: '0'
+      audio_player_wavesurfer_barheight: '1'
+      audio_player_wavesurfer_barwidth: ''
+      audio_player_wavesurfer_cursorcolor: '#000000'
+      audio_player_wavesurfer_cursorwidth: '1'
+      audio_player_wavesurfer_progresscolor: '#000000'
+      audio_player_wavesurfer_wavecolor: '#000000'
+      audio_player_wordpress_animation: '1'
+      audio_player_soundmanager_theme: default
+      audio_player_initial_volume: '8'
+      audio_player_lazyload: '1'
+      audio_player_wavesurfer_combine_files: 0
+      audio_player_wavesurfer_forcedecode: 0
+      audio_player_wavesurfer_normalize: 0
+      audio_player_wavesurfer_responsive: 0
+      audio_player_wordpress_combine_files: 0
+      audio_player_autoplay: 0
+      download_button: 0
+      download_link: 0
     third_party_settings: {  }
     region: content
 hidden:

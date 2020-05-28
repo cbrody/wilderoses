@@ -7,6 +7,7 @@ dependencies:
     - field.field.commerce_product.download.body
     - field.field.commerce_product.download.field_file
     - field.field.commerce_product.download.field_image
+    - image.style.medium
   module:
     - file
     - image
@@ -35,7 +36,7 @@ content:
     weight: 2
     label: hidden
     settings:
-      image_style: ''
+      image_style: medium
       image_link: content
     third_party_settings: {  }
     type: image

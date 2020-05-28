@@ -1,6 +1,7 @@
 module:
   address: 0
   admin_toolbar: 0
+  admin_toolbar_search: 0
   admin_toolbar_tools: 0
   advancedqueue: 0
   audiofield: 0
@@ -14,9 +15,10 @@ module:
   colorbox: 0
   comment: 0
   commerce: 0
-  commerce_braintree: 0
   commerce_cart: 0
   commerce_checkout: 0
+  commerce_file: 0
+  commerce_license: 0
   commerce_log: 0
   commerce_number_pattern: 0
   commerce_order: 0
@@ -24,7 +26,6 @@ module:
   commerce_paypal: 0
   commerce_price: 0
   commerce_product: 0
-  commerce_recurring: 0
   commerce_shipping: 0
   commerce_store: 0
   config: 0
@@ -49,6 +50,7 @@ module:
   imagezoom: 0
   imagezoom_gallery: 0
   inline_entity_form: 0
+  interval: 0
   juicebox: 0
   libraries: 0
   link: 0
@@ -63,6 +65,7 @@ module:
   profile: 0
   quickedit: 0
   rdf: 0
+  recurring_period: 0
   search: 0
   shortcut: 0
   state_machine: 0

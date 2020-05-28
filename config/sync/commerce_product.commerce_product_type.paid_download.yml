@@ -1,0 +1,12 @@
+uuid: 1c7d9580-27e4-441c-aafe-0f0afb5ecc6c
+langcode: en
+status: true
+dependencies: {  }
+id: paid_download
+label: 'Paid download'
+description: ''
+variationType: paid_download
+multipleVariations: false
+injectVariationFields: true
+traits: {  }
+locked: false

@@ -27,6 +27,7 @@
         "drupal/colorbox": "^1.4",
         "drupal/commerce": "^2.14",
         "drupal/commerce_braintree": "~1.0",
+        "drupal/commerce_file": "2.x-dev",
         "drupal/commerce_paypal": "^1.0@beta",
         "drupal/commerce_recurring": "^1.0@beta",
         "drupal/commerce_shipping": "^2.0@beta",
@@ -42,7 +43,7 @@
         "drupal/paypal_subscriptions": "^1.0",
         "drupal/recaptcha": "^2.4",
         "drupal/swiftmailer": "^1.0@beta",
-        "drush/drush": "^9.0.0",
+        "drush/drush": "^10.2",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3",
@@ -101,8 +102,8 @@
             }
         },
         "patches": {
-          "drupal/captcha": {
-            "Undefined variable type in Captcha Examples": "https://www.drupal.org/files/issues/2019-10-30/3091082-2.patch"
+          "drupal/core": {
+            "system_update_8804": "https://www.drupal.org/files/issues/2020-04-23/core.system_update_8804.truncate_path_alias_tables.patch"
           }
         }
     }

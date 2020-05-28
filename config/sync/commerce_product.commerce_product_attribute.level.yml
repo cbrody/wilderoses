@@ -1,7 +1,0 @@
-uuid: 48950c37-c332-49be-a668-9938650e9965
-langcode: en
-status: true
-dependencies: {  }
-id: level
-label: Level
-elementType: commerce_product_rendered_attribute

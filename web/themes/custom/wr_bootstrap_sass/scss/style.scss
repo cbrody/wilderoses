@@ -108,7 +108,8 @@ img {
 }
 
 .audiofield-audiojs {
-  max-width: 100%;
+  max-width: 300px;
+  width: -webkit-fill-available;
   .play-pauseZ {
     border: none;
   }
@@ -121,9 +122,15 @@ img {
   }
 }
 
-.audiofield-audiojs-frame ol {
+.audiofield-audiojs-frame  {
+  ol {
   list-style: none;
-  max-width: 100%;
+  max-width: 300px;
+  width: -webkit-fill-available;
+    li {
+      margin-left: 24px;
+    }
+  }
 }
 
 /***** FOOTER ******/
@@ -171,4 +178,10 @@ img {
 
 .product--rendered-attribute .form-radio {
     display: block;
+}
+
+
+.path-shop .field--name-title {
+  line-height: 2rem;
+  font-size: $font-size-h5;
 }

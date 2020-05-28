@@ -9,7 +9,6 @@ label: PayPal
 weight: null
 plugin: paypal_checkout
 configuration:
-  payment_solution: smart_payment_buttons
   client_id: Aeg4_KRz8X_aigwnc6IqkjHKSFyV6GqIeT2pT9tu4jD8xqvEsa-__zlz8JAMcYiT869ZKAiolo4W4wWY
   secret: EGlXKmDLKSyEwRR9wm1SIM0CBU-W1SxCz9JpnVgum7iqlZTEVmnZmkv06wJCuz_xc3oFm02PmKDa7eoF
   intent: capture
@@ -30,12 +29,5 @@ configuration:
   mode: live
   payment_method_types:
     - credit_card
-conditions:
-  -
-    plugin: order_variation_type
-    configuration:
-      variation_types:
-        - default
-        - download
-        - size
+conditions: {  }
 conditionOperator: AND

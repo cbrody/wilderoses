@@ -1,0 +1,16 @@
+uuid: c70a9527-117f-427e-ac69-cac8a85ba67f
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - commerce_product
+_core:
+  default_config_hash: 6n6q97CDOCqHGs4Dun3BqVJE6e1o6TA-69qCwoUU-SY
+label: License
+id: license
+purchasableEntityType: commerce_product_variation
+orderType: license
+traits:
+  - commerce_license_order_item_type
+locked: false
