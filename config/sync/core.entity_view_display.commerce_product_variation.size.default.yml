@@ -5,6 +5,7 @@ dependencies:
   config:
     - commerce_product.commerce_product_variation_type.size
     - field.field.commerce_product_variation.size.attribute_size
+    - field.field.commerce_product_variation.size.weight
   module:
     - commerce_price
 id: commerce_product_variation.size.default
@@ -34,3 +35,4 @@ hidden:
   list_price: true
   sku: true
   title: true
+  weight: true

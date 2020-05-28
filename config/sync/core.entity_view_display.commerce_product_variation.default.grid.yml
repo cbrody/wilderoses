@@ -6,6 +6,7 @@ dependencies:
     - commerce_product.commerce_product_variation_type.default
     - core.entity_view_mode.commerce_product_variation.grid
     - field.field.commerce_product_variation.default.field_promoted
+    - field.field.commerce_product_variation.default.weight
   module:
     - commerce_price
 id: commerce_product_variation.default.grid
@@ -14,7 +15,7 @@ bundle: default
 mode: grid
 content:
   price:
-    label: inline
+    label: hidden
     type: commerce_price_default
     weight: 0
     region: content
@@ -28,3 +29,4 @@ hidden:
   product_id: true
   sku: true
   title: true
+  weight: true

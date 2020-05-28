@@ -6,9 +6,7 @@ dependencies:
     - commerce_product.commerce_product_type.shirt
     - field.field.commerce_product.shirt.body
     - field.field.commerce_product.shirt.field_image
-    - field.field.commerce_product.shirt.stores
-    - field.field.commerce_product.shirt.variations
-    - image.style.large
+    - image.style.medium
   module:
     - commerce_product
     - image
@@ -30,7 +28,7 @@ content:
     weight: 1
     label: hidden
     settings:
-      image_style: large
+      image_style: medium
       image_link: content
     third_party_settings: {  }
     type: image

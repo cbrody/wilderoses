@@ -1,0 +1,54 @@
+uuid: 6410e967-942f-455f-a745-979810566858
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_file
+    - commerce_payment
+    - commerce_paypal
+    - commerce_shipping
+id: license
+label: License
+plugin: multistep_default
+configuration:
+  display_checkout_progress: true
+  panes:
+    login:
+      allow_guest_checkout: false
+      allow_registration: true
+      step: login
+      weight: 0
+    completion_register:
+      step: _disabled
+      weight: 10
+    review:
+      step: review
+      weight: 3
+    contact_information:
+      double_entry: false
+      step: order_information
+      weight: 1
+    order_summary:
+      view: ''
+      step: _sidebar
+      weight: 8
+    completion_message:
+      step: complete
+      weight: 6
+    commerce_file_download:
+      step: complete
+      weight: 7
+    payment_information:
+      step: order_information
+      weight: 2
+    payment_process:
+      capture: true
+      step: payment
+      weight: 4
+    paypal_checkout_payment_process:
+      step: payment
+      weight: 5
+    shipping_information:
+      require_shipping_profile: true
+      step: _disabled
+      weight: 9

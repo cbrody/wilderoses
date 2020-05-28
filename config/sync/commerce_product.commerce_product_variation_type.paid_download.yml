@@ -1,0 +1,19 @@
+uuid: 0013bbf1-df2a-4cd2-832d-586a0b82fa2a
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_license
+third_party_settings:
+  commerce_license:
+    license_types:
+      commerce_file: commerce_file
+    activate_on_place: true
+id: paid_download
+label: 'Paid download'
+orderItemType: license
+generateTitle: true
+traits:
+  - commerce_file
+  - commerce_license
+locked: false

@@ -1,0 +1,66 @@
+uuid: 8577cf61-9035-4701-aca8-adc8308dadbe
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.paid_download
+    - core.entity_view_mode.commerce_product.grid
+    - field.field.commerce_product.paid_download.body
+    - field.field.commerce_product.paid_download.field_image
+    - field.field.commerce_product.paid_download.field_media
+    - image.style.medium
+  module:
+    - commerce_product
+    - image
+    - text
+id: commerce_product.paid_download.grid
+targetEntityType: commerce_product
+bundle: paid_download
+mode: grid
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 2
+    settings:
+      trim_length: 150
+    third_party_settings: {  }
+    region: content
+  field_image:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: content
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_media:
+    type: entity_reference_entity_view
+    weight: 3
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: 0
+    region: content
+    settings:
+      link_to_entity: true
+    third_party_settings: {  }
+  variations:
+    type: commerce_add_to_cart
+    weight: 4
+    region: content
+    label: hidden
+    settings:
+      combine: false
+    third_party_settings: {  }
+hidden:
+  created: true
+  stores: true
+  uid: true

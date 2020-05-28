@@ -8,8 +8,6 @@ dependencies:
     - field.field.commerce_product.download.body
     - field.field.commerce_product.download.field_file
     - field.field.commerce_product.download.field_image
-    - field.field.commerce_product.download.stores
-    - field.field.commerce_product.download.variations
   module:
     - file
     - imagezoom

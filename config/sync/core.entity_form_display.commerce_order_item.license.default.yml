@@ -1,0 +1,49 @@
+uuid: 9d22722f-0119-49b9-a00d-1457b77470f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_order.commerce_order_item_type.license
+    - field.field.commerce_order_item.license.license
+  enforced:
+    module:
+      - commerce_product
+  module:
+    - commerce_order
+_core:
+  default_config_hash: AI9120ApX7uexCUMTuO3RgE5bWu8175i_bNlPMRXe7M
+id: commerce_order_item.license.default
+targetEntityType: commerce_order_item
+bundle: license
+mode: default
+content:
+  purchased_entity:
+    type: entity_reference_autocomplete
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    third_party_settings: {  }
+    region: content
+  quantity:
+    type: commerce_quantity
+    weight: 1
+    settings:
+      placeholder: ''
+      step: '1'
+    third_party_settings: {  }
+    region: content
+  unit_price:
+    type: commerce_unit_price
+    weight: 2
+    settings:
+      require_confirmation: true
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  license: true
+  status: true
+  uid: true
