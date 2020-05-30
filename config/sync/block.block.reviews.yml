@@ -12,7 +12,7 @@ dependencies:
 id: reviews
 theme: wr_bootstrap_sass
 region: content
-weight: -1
+weight: -3
 provider: null
 plugin: 'block_content:c13d61aa-567c-45ad-afea-27c9812e875c'
 settings:

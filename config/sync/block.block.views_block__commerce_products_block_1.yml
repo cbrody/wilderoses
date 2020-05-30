@@ -6,13 +6,14 @@ dependencies:
     - views.view.commerce_products
   module:
     - system
+    - user
     - views
   theme:
     - wr_bootstrap_sass
 id: views_block__commerce_products_block_1
 theme: wr_bootstrap_sass
 region: content
-weight: -7
+weight: -9
 provider: null
 plugin: 'views_block:commerce_products-block_1'
 settings:
@@ -28,3 +29,10 @@ visibility:
     pages: '<front>'
     negate: false
     context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      administrator: administrator
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

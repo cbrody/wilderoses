@@ -8,6 +8,7 @@ dependencies:
     - field.field.commerce_product.paid_download.body
     - field.field.commerce_product.paid_download.field_image
     - field.field.commerce_product.paid_download.field_media
+    - field.field.commerce_product.paid_download.field_promoted
     - image.style.medium
   module:
     - commerce_product
@@ -62,5 +63,6 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
+  field_promoted: true
   stores: true
   uid: true

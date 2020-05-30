@@ -1,0 +1,23 @@
+uuid: 9a411bee-755b-4742-b57c-257c0a9ce9c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.paid_download
+    - field.storage.commerce_product.field_promoted
+id: commerce_product.paid_download.field_promoted
+field_name: field_promoted
+entity_type: commerce_product
+bundle: paid_download
+label: Promoted
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

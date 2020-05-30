@@ -1,0 +1,34 @@
+uuid: 0d4a0f5a-7701-4653-8c6b-778323d004f1
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_file
+    - commerce_paypal
+    - commerce_shipping
+id: license_paypal_
+label: 'License (Paypal)'
+plugin: paypal_checkout
+configuration:
+  display_checkout_progress: true
+  panes:
+    order_summary:
+      view: ''
+      step: _sidebar
+      weight: '10'
+    review:
+      step: review
+      weight: '10'
+    completion_message:
+      step: complete
+      weight: '10'
+    commerce_file_download:
+      step: complete
+      weight: '10'
+    paypal_checkout_payment_process:
+      step: payment
+      weight: '10'
+    shipping_information:
+      require_shipping_profile: true
+      step: _disabled
+      weight: '10'

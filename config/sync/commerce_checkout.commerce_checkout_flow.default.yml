@@ -3,8 +3,10 @@ langcode: en
 status: true
 dependencies:
   module:
+    - commerce_file
     - commerce_payment
     - commerce_paypal
+    - commerce_shipping
 _core:
   default_config_hash: wwkDVBiXUqSzRifJbb71ajFBklJdNJ_DgS67IF-_qgY
 id: default
@@ -14,12 +16,12 @@ configuration:
   display_checkout_progress: true
   panes:
     login:
-      allow_guest_checkout: true
-      allow_registration: false
+      allow_guest_checkout: false
+      allow_registration: true
       step: login
       weight: 0
     contact_information:
-      double_entry: true
+      double_entry: false
       step: order_information
       weight: 1
     review:
@@ -35,6 +37,9 @@ configuration:
     completion_register:
       step: complete
       weight: 10
+    commerce_file_download:
+      step: complete
+      weight: 10
     payment_information:
       step: order_information
       weight: 10
@@ -44,4 +49,8 @@ configuration:
       weight: 10
     paypal_checkout_payment_process:
       step: payment
+      weight: 10
+    shipping_information:
+      require_shipping_profile: true
+      step: _disabled
       weight: 10

@@ -12,7 +12,7 @@ dependencies:
 id: contactblock
 theme: wr_bootstrap_sass
 region: content
-weight: -8
+weight: -11
 provider: null
 plugin: 'block_content:1eeca268-e241-4042-a145-aa69c0b04cb5'
 settings:

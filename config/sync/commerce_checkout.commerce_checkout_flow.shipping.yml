@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   module:
+    - commerce_file
     - commerce_payment
     - commerce_paypal
     - commerce_shipping
@@ -16,7 +17,7 @@ configuration:
   panes:
     login:
       allow_guest_checkout: true
-      allow_registration: false
+      allow_registration: true
       step: login
       weight: 0
     contact_information:
@@ -24,7 +25,7 @@ configuration:
       step: order_information
       weight: 1
     shipping_information:
-      require_shipping_profile: false
+      require_shipping_profile: true
       step: order_information
       weight: 2
     payment_information:
@@ -50,3 +51,6 @@ configuration:
       view: commerce_checkout_order_summary
       step: _sidebar
       weight: 9
+    commerce_file_download:
+      step: complete
+      weight: 10
