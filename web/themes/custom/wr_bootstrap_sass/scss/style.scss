@@ -27,17 +27,18 @@ h1, h2, h3, h4, h5, h6 {
   color: $accent-shade;
 }
 
-h1.title:first-letter {
-    font-family: "Nancy";
-    vertical-align: text-top;
-    font-size: 6rem;
-    line-height: 6rem;
-    float: left;
-}
+// h1.title:first-letter {
+//     font-family: "Nancy";
+//     vertical-align: text-top;
+//     font-size: 6rem;
+//     line-height: 6rem;
+//     float: left;
+// }
 
 h1.title {
   padding-top: 1rem;
   line-height: 2rem;
+  margin-bottom: 1.5rem;
   @extend .clearfix;
 }
 
