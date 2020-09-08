@@ -107,6 +107,9 @@
         "patches": {
           "drupal/core": {
             "system_update_8804": "https://www.drupal.org/files/issues/2020-04-23/core.system_update_8804.truncate_path_alias_tables.patch"
+          },
+          "drupal/commerce_license": {
+            "License overview broken": "https://www.drupal.org/files/issues/2020-01-14/3100029-5-license-overview-broken.patch"
           }
         }
     }
