@@ -2458,17 +2458,17 @@
         },
         {
             "name": "drupal/commerce",
-            "version": "2.20.0",
+            "version": "2.21.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/commerce.git",
-                "reference": "8.x-2.20"
+                "reference": "8.x-2.21"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/commerce-8.x-2.20.zip",
-                "reference": "8.x-2.20",
-                "shasum": "ef187586d1752acf624a750613bd0ae55a7f4f4e"
+                "url": "https://ftp.drupal.org/files/projects/commerce-8.x-2.21.zip",
+                "reference": "8.x-2.21",
+                "shasum": "3b38b58458e26f14cc4c203cda3f01ac84296909"
             },
             "require": {
                 "commerceguys/intl": "^1.0.0",
@@ -2491,6 +2491,7 @@
                 "drupal/commerce_price": "*",
                 "drupal/commerce_product": "*",
                 "drupal/commerce_store": "*",
+                "drupal/entity_print": "^2.2",
                 "drupal/entity_reference_revisions": "*",
                 "drupal/mailsystem": "^4.3",
                 "drupal/profile": "*",
@@ -2499,8 +2500,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.20",
-                    "datestamp": "1593196157",
+                    "version": "8.x-2.21",
+                    "datestamp": "1600787975",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2614,7 +2615,7 @@
             "name": "drupal/commerce_cart",
             "version": "2.20.0",
             "require": {
-                "drupal/commerce": "self.version",
+                "drupal/commerce": "*",
                 "drupal/commerce_order": "*",
                 "drupal/commerce_product": "*",
                 "drupal/core": "^8.8 || ^9"
@@ -2662,7 +2663,7 @@
             "name": "drupal/commerce_checkout",
             "version": "2.20.0",
             "require": {
-                "drupal/commerce": "self.version",
+                "drupal/commerce": "*",
                 "drupal/commerce_cart": "*",
                 "drupal/commerce_order": "*",
                 "drupal/core": "^8.8 || ^9"
@@ -2904,7 +2905,7 @@
             "name": "drupal/commerce_number_pattern",
             "version": "2.20.0",
             "require": {
-                "drupal/commerce": "self.version",
+                "drupal/commerce": "*",
                 "drupal/commerce_store": "*",
                 "drupal/core": "^8.8 || ^9"
             },
@@ -2951,7 +2952,7 @@
             "name": "drupal/commerce_order",
             "version": "2.20.0",
             "require": {
-                "drupal/commerce": "self.version",
+                "drupal/commerce": "*",
                 "drupal/commerce_number_pattern": "*",
                 "drupal/commerce_price": "*",
                 "drupal/commerce_store": "*",
@@ -3003,7 +3004,7 @@
             "name": "drupal/commerce_payment",
             "version": "2.20.0",
             "require": {
-                "drupal/commerce": "self.version",
+                "drupal/commerce": "*",
                 "drupal/commerce_order": "*",
                 "drupal/core": "^8.8 || ^9",
                 "drupal/entity_reference_revisions": "*"
@@ -3049,17 +3050,17 @@
         },
         {
             "name": "drupal/commerce_paypal",
-            "version": "1.0.0-beta9",
+            "version": "1.0.0-beta10",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/commerce_paypal.git",
-                "reference": "8.x-1.0-beta9"
+                "reference": "8.x-1.0-beta10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/commerce_paypal-8.x-1.0-beta9.zip",
-                "reference": "8.x-1.0-beta9",
-                "shasum": "2c20879f7a14083cddc6bb9be8da69cddd363193"
+                "url": "https://ftp.drupal.org/files/projects/commerce_paypal-8.x-1.0-beta10.zip",
+                "reference": "8.x-1.0-beta10",
+                "shasum": "127c2dd40895a4830c32ee25b723d694d9627a36"
             },
             "require": {
                 "drupal/commerce": "^2.19",
@@ -3070,8 +3071,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.0-beta9",
-                    "datestamp": "1594294368",
+                    "version": "8.x-1.0-beta10",
+                    "datestamp": "1600959562",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
@@ -3110,7 +3111,7 @@
             "name": "drupal/commerce_price",
             "version": "2.20.0",
             "require": {
-                "drupal/commerce": "self.version",
+                "drupal/commerce": "*",
                 "drupal/core": "^8.8 || ^9"
             },
             "type": "metapackage",
@@ -3156,7 +3157,7 @@
             "name": "drupal/commerce_product",
             "version": "2.20.0",
             "require": {
-                "drupal/commerce": "self.version",
+                "drupal/commerce": "*",
                 "drupal/commerce_price": "*",
                 "drupal/commerce_store": "*",
                 "drupal/core": "^8.8 || ^9"
@@ -3347,7 +3348,7 @@
             "name": "drupal/commerce_store",
             "version": "2.20.0",
             "require": {
-                "drupal/commerce": "self.version",
+                "drupal/commerce": "*",
                 "drupal/commerce_price": "*",
                 "drupal/core": "^8.8 || ^9"
             },
