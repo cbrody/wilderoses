@@ -31,7 +31,7 @@
         "php": ">=7.3.0",
         "composer/installers": "^1.9",
         "cweagans/composer-patches": "^1.7",
-        "drupal/admin_toolbar": "^2.0",
+        "drupal/admin_toolbar": "^3.2",
         "drupal/audiofield": "^1.9",
         "drupal/bootstrap_barrio": "^4.22",
         "drupal/bootstrap_sass": "^1.9",
@@ -50,7 +50,7 @@
         "drupal/core-recommended": "^9.0.0",
         "drupal/dropzonejs": "^2.4",
         "drupal/field_slideshow": "^3.0@beta",
-        "drupal/file_delete": "^1.0",
+        "drupal/file_delete": "^2.0",
         "drupal/fontawesome": "^2.14",
         "drupal/google_analytics": "^3.0",
         "drupal/honeypot": "^2.0",
@@ -128,9 +128,6 @@
             }
         },
         "patches": {
-          "drupal/file_delete": {
-            "Delete immediately": "https://www.drupal.org/files/issues/2020-10-20/3115158-6.patch"
-          }
         }
     },
     "require-dev": {
