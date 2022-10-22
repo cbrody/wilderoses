@@ -28,13 +28,16 @@
 
 # Ignore node
 node_modules
-/INSTALL.txt
-/README.txt
+
+.DS_Store
+/.csslintrc
+/.editorconfig
+/.eslintignore
+/.eslintrc.json
+/.ht.router.php
+/.htaccess
 /autoload.php
-/example.gitignore
 /index.php
 /robots.txt
 /update.php
 /web.config
-
-.DS_Store
