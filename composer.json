@@ -52,7 +52,7 @@
         "drupal/field_slideshow": "^3.0@beta",
         "drupal/file_delete": "^2.0",
         "drupal/fontawesome": "^2.14",
-        "drupal/google_analytics": "^3.0",
+        "drupal/google_analytics": "^4",
         "drupal/honeypot": "^2.0",
         "drupal/juicebox": "^3.0",
         "drupal/libraries": "^3.0@beta",

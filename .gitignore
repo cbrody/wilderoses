@@ -41,3 +41,5 @@ node_modules
 /robots.txt
 /update.php
 /web.config
+/INSTALL.txt
+/example.gitignore
