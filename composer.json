@@ -40,7 +40,7 @@
         "drupal/commerce_braintree": "~1.0",
         "drupal/commerce_combine_carts": "^1.0@beta",
         "drupal/commerce_file": "2.x-dev",
-        "drupal/commerce_license": "^2.0",
+        "drupal/commerce_license": "^3.0",
         "drupal/commerce_paypal": "^1.0@beta",
         "drupal/commerce_recurring": "^1.0@beta",
         "drupal/commerce_shipping": "^2.0@beta",

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "15cfd7322054ec5f2d26a7fa14150d40",
+    "content-hash": "7805584a249c403f4f9e726aff2647a0",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2676,28 +2676,30 @@
         },
         {
             "name": "drupal/commerce_license",
-            "version": "2.0.0",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/commerce_license.git",
-                "reference": "8.x-2.0"
+                "reference": "3.0.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/commerce_license-8.x-2.0.zip",
-                "reference": "8.x-2.0",
-                "shasum": "8f5ef9d4c0bca8e011706d2aff3a428172cfae27"
+                "url": "https://ftp.drupal.org/files/projects/commerce_license-3.0.0.zip",
+                "reference": "3.0.0",
+                "shasum": "d851af89f69076f4a5bfc0e3b7c524f9e838721d"
             },
             "require": {
                 "drupal/advancedqueue": "^1.0",
                 "drupal/commerce": "^2.19 || ^3",
                 "drupal/commerce_checkout": "*",
                 "drupal/commerce_product": "*",
-                "drupal/core": "^8.9 || ^9",
+                "drupal/core": "^8.9 || ^9 || ^10",
                 "drupal/entity": "*",
                 "drupal/interval": "^1.11",
-                "drupal/recurring_period": "^1.0",
                 "drupal/state_machine": "*"
+            },
+            "conflict": {
+                "drupal/recurring_period": "1.*"
             },
             "require-dev": {
                 "dms/phpunit-arraysubset-asserts": "^0.3",
@@ -2706,8 +2708,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.0",
-                    "datestamp": "1687180773",
+                    "version": "3.0.0",
+                    "datestamp": "1687180708",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5380,55 +5382,6 @@
             "support": {
                 "source": "https://git.drupal.org/project/recaptcha.git",
                 "issues": "https://www.drupal.org/project/issues/recaptcha"
-            }
-        },
-        {
-            "name": "drupal/recurring_period",
-            "version": "1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/recurring_period.git",
-                "reference": "8.x-1.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/recurring_period-8.x-1.0.zip",
-                "reference": "8.x-1.0",
-                "shasum": "da6506bc12de892d86706fba7904691de822e10b"
-            },
-            "require": {
-                "drupal/core": "^8.8 || ^9",
-                "drupal/interval": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-1.0",
-                    "datestamp": "1607335704",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "chrisrockwell",
-                    "homepage": "https://www.drupal.org/user/448158"
-                },
-                {
-                    "name": "joachim",
-                    "homepage": "https://www.drupal.org/user/107701"
-                }
-            ],
-            "description": "Provides a configurable plugin for defining recurring time periods.",
-            "homepage": "https://www.drupal.org/project/recurring_period",
-            "support": {
-                "source": "https://git.drupalcode.org/project/recurring_period"
             }
         },
         {
