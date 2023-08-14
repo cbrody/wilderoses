@@ -1,3 +1,5 @@
+_core:
+  default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
 module:
   address: 0
   admin_toolbar: 0
@@ -10,6 +12,7 @@ module:
   block: 0
   block_content: 0
   breakpoint: 0
+  captcha: 0
   ckeditor: 0
   color: 0
   colorbox: 0
@@ -35,11 +38,13 @@ module:
   ctools: 0
   datetime: 0
   dblog: 0
+  dropzonejs: 0
   dynamic_page_cache: 0
   editor: 0
   entity: 0
   entity_reference_revisions: 0
   field: 0
+  field_layout: 0
   field_ui: 0
   file: 0
   file_delete: 0
@@ -48,17 +53,24 @@ module:
   google_analytics: 0
   help: 0
   history: 0
+  honeypot: 0
   image: 0
-  imagezoom: 0
-  imagezoom_gallery: 0
   inline_entity_form: 0
   interval: 0
   juicebox: 0
+  layout_discovery: 0
   libraries: 0
   link: 0
   mailsystem: 0
   media: 0
+  media_bulk_upload: 0
+  media_library: 0
   menu_ui: 0
+  metatag: 0
+  metatag_facebook: 0
+  metatag_open_graph: 0
+  metatag_open_graph_products: 0
+  mysql: 0
   node: 0
   options: 0
   page_cache: 0
@@ -66,8 +78,10 @@ module:
   path_alias: 0
   physical: 0
   profile: 0
+  protected_pages: 0
   quickedit: 0
   rdf: 0
+  recaptcha: 0
   recurring_period: 0
   search: 0
   shortcut: 0
@@ -87,12 +101,8 @@ module:
   views: 10
   standard: 1000
 theme:
-  stable: 0
-  classy: 0
   bartik: 0
   seven: 0
   bootstrap_barrio: 0
   wr_bootstrap_sass: 0
 profile: standard
-_core:
-  default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc

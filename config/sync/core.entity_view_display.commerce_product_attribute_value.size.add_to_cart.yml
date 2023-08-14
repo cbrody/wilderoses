@@ -5,17 +5,25 @@ dependencies:
   config:
     - commerce_product.commerce_product_attribute.size
     - core.entity_view_mode.commerce_product_attribute_value.add_to_cart
+  module:
+    - field_layout
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: commerce_product_attribute_value.size.add_to_cart
 targetEntityType: commerce_product_attribute_value
 bundle: size
 mode: add_to_cart
 content:
   name:
-    label: hidden
     type: string
-    weight: -5
-    region: content
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: -5
+    region: content
 hidden: {  }

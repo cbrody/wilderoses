@@ -1,0 +1,8 @@
+uuid: ab6343b4-6ccd-4cf5-98fe-1ad49069a413
+langcode: en
+status: true
+dependencies: {  }
+name: 'EPK sections'
+vid: epk_sections
+description: ''
+weight: 0

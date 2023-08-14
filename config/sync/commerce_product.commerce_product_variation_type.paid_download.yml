@@ -11,9 +11,9 @@ third_party_settings:
     activate_on_place: true
 id: paid_download
 label: 'Paid download'
-orderItemType: license
-generateTitle: true
 traits:
   - commerce_file
   - commerce_license
 locked: false
+orderItemType: license
+generateTitle: true

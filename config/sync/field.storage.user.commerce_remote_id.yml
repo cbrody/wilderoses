@@ -2,12 +2,12 @@ uuid: c2d4d4b6-b403-49b9-870e-6862636c01dd
 langcode: en
 status: true
 dependencies:
-  enforced:
-    module:
-      - commerce_payment
   module:
     - commerce
     - user
+  enforced:
+    module:
+      - commerce_payment
 _core:
   default_config_hash: YLh2hnX0ZtVtJpFWUkcjkpbgJAP85JuAamng9bLk8M8
 id: user.commerce_remote_id

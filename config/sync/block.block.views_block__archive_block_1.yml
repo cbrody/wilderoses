@@ -19,20 +19,20 @@ plugin: 'views_block:archive-block_1'
 settings:
   id: 'views_block:archive-block_1'
   label: 'Blog archive'
-  provider: views
   label_display: visible
+  provider: views
   views_label: 'Blog archive'
   items_per_page: none
 visibility:
-  node_type:
-    id: node_type
-    bundles:
-      article: article
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/blog*\r\n"
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'
-  request_path:
-    id: request_path
-    pages: "/blog*\r\n"
-    negate: false
-    context_mapping: {  }
+    bundles:
+      article: article

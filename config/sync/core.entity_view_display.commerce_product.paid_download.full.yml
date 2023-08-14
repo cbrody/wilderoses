@@ -9,62 +9,61 @@ dependencies:
     - field.field.commerce_product.paid_download.field_image
     - field.field.commerce_product.paid_download.field_media
     - field.field.commerce_product.paid_download.field_promoted
+    - image.style.large
   module:
     - commerce_product
-    - imagezoom
+    - field_layout
+    - image
+    - layout_discovery
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: commerce_product.paid_download.full
 targetEntityType: commerce_product
 bundle: paid_download
 mode: full
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 3
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 3
     region: content
   field_image:
-    weight: 1
+    type: image
     label: hidden
     settings:
-      imagezoom_zoom_type: lens
-      imagezoom_display_style: medium
-      imagezoom_zoom_style: full_width
-      imagezoom_disable: true
-      imagezoom_disable_width: 480
-      imagezoom_additional: "responsive: true\r\nlensShape: round\r\nlensBorder: 0\r\nlensSize: 220\r\ncursor: pointer"
+      image_link: ''
+      image_style: large
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
-    type: imagezoom
+    weight: 0
     region: content
   field_media:
     type: entity_reference_entity_view
-    weight: 4
-    region: content
     label: hidden
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
-  title:
-    label: hidden
-    type: string
-    weight: 0
+    weight: 4
     region: content
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
   variations:
     type: commerce_add_to_cart
-    weight: 2
-    region: content
     label: hidden
     settings:
       combine: true
     third_party_settings: {  }
+    weight: 99
+    region: content
 hidden:
   created: true
   field_promoted: true
   stores: true
+  title: true
   uid: true

@@ -4,9 +4,9 @@ status: true
 dependencies: {  }
 id: download
 label: 'Free download'
+traits: {  }
+locked: false
 description: ''
 variationType: download
 multipleVariations: false
 injectVariationFields: false
-traits: {  }
-locked: false

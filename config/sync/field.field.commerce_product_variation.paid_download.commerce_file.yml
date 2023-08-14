@@ -18,10 +18,10 @@ translatable: false
 default_value: {  }
 default_value_callback: null
 settings:
+  handler: 'default:file'
+  handler_settings: {  }
   file_directory: downloads
   file_extensions: 'mp4 m4v flv wmv mp3 wav jpg jpeg png pdf doc docx ppt pptx xls xlsx'
   max_filesize: ''
   description_field: true
-  handler: 'default:file'
-  handler_settings: {  }
 field_type: file

@@ -1,0 +1,9 @@
+uuid: a4b5b1a8-fdbd-4212-8145-55e065bc7f88
+langcode: en
+status: true
+dependencies: {  }
+id: commerce_product
+label: Product
+tags:
+  og_image_url: '[commerce_product:field_image]'
+  og_image_alt: '[commerce_product:field_image:alt]'

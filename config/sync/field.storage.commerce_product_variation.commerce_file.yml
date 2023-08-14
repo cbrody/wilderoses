@@ -2,12 +2,12 @@ uuid: a7c2a732-8440-4b7f-90cc-ff5a05e514dc
 langcode: en
 status: true
 dependencies:
-  enforced:
-    module:
-      - commerce_file
   module:
     - commerce_product
     - file
+  enforced:
+    module:
+      - commerce_file
 _core:
   default_config_hash: UKzoWxAgtGc93ZcVHJpiXcuR2QdYOnyst7e4fL8TkgI
 id: commerce_product_variation.commerce_file
@@ -15,10 +15,10 @@ field_name: commerce_file
 entity_type: commerce_product_variation
 type: file
 settings:
+  target_type: file
   display_field: false
   display_default: false
   uri_scheme: private
-  target_type: file
 module: file
 locked: false
 cardinality: -1

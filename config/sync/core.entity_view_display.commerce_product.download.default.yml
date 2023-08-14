@@ -9,55 +9,64 @@ dependencies:
     - field.field.commerce_product.download.field_image
     - image.style.medium
   module:
+    - field_layout
     - file
     - image
+    - layout_discovery
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: commerce_product.download.default
 targetEntityType: commerce_product
 bundle: download
 mode: default
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 1
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 1
     region: content
   field_file:
-    weight: 3
+    type: file_default
     label: hidden
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
-    type: file_default
+    weight: 3
     region: content
   field_image:
-    weight: 2
+    type: image
     label: hidden
     settings:
-      image_style: medium
       image_link: content
+      image_style: medium
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
-    type: image
+    weight: 2
     region: content
   title:
-    label: hidden
     type: string
-    weight: 0
-    region: content
+    label: hidden
     settings:
       link_to_entity: true
     third_party_settings: {  }
+    weight: 0
+    region: content
   variations:
     type: entity_reference_entity_view
-    weight: 4
-    region: content
     label: hidden
     settings:
-      link: true
       view_mode: default
+      link: true
     third_party_settings: {  }
+    weight: 4
+    region: content
 hidden:
   created: true
   stores: true

@@ -1,0 +1,22 @@
+uuid: c7bc4ad5-508c-48d2-a73d-123e3cadc1a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.subpage
+id: node.subpage.status
+field_name: status
+entity_type: node
+bundle: subpage
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -2,12 +2,12 @@ uuid: f2d16d24-a15b-4c13-b6e3-235fd0299db4
 langcode: en
 status: true
 dependencies:
-  enforced:
-    module:
-      - commerce_product
   module:
     - commerce_product
     - entity
+  enforced:
+    module:
+      - commerce_product
 _core:
   default_config_hash: wlvmNEgXVD81RVgOeQJVgSdT5t0RAwWJVyIXdLIONdg
 id: commerce_product_delete_action

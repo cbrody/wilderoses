@@ -6,7 +6,14 @@ dependencies:
     - block_content.type.basic
     - field.field.block_content.basic.body
   module:
+    - field_layout
+    - layout_discovery
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 _core:
   default_config_hash: orJpHUlAc_wiQLMUjIgEJXGeiqylGHMPcmNRjGtct-M
 id: block_content.basic.default
@@ -15,10 +22,10 @@ bundle: basic
 mode: default
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 0
-    region: content
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden: {  }

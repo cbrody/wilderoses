@@ -1,0 +1,15 @@
+uuid: 5a9d0321-e196-44d9-91dd-0e4984bf0cc1
+langcode: en
+status: true
+dependencies: {  }
+id: audio
+label: Audio
+media_types:
+  audio: audio
+  file: 0
+  image: 0
+  remote_video: 0
+  video: 0
+form_mode: media_library
+show_alt: null
+show_title: null

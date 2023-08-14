@@ -1,0 +1,29 @@
+uuid: 2978f210-3a5f-467f-8cfc-95b0eed1eedd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_section
+    - node.type.subpage
+    - taxonomy.vocabulary.epk_sections
+id: node.subpage.field_section
+field_name: field_section
+entity_type: node
+bundle: subpage
+label: Section
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      epk_sections: epk_sections
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

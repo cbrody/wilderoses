@@ -1,0 +1,30 @@
+uuid: 38d1dec2-6498-4217-9467-c43bc54fa2ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.promoted
+  module:
+    - system
+    - views
+  theme:
+    - wr_bootstrap_sass
+id: views_block__promoted_block_2
+theme: wr_bootstrap_sass
+region: content
+weight: -9
+provider: null
+plugin: 'views_block:promoted-block_2'
+settings:
+  id: 'views_block:promoted-block_2'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '<front>'

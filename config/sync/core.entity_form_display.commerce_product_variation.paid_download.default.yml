@@ -10,7 +10,14 @@ dependencies:
   module:
     - commerce
     - commerce_price
+    - field_layout
     - file
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: commerce_product_variation.paid_download.default
 targetEntityType: commerce_product_variation
 bundle: paid_download
@@ -19,22 +26,22 @@ content:
   commerce_file:
     type: file_generic
     weight: 91
+    region: content
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
-    region: content
   license_expiration:
     type: commerce_plugin_select
     weight: 21
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   license_type:
     type: commerce_plugin_select
     weight: 20
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   list_price:
     type: commerce_list_price
     weight: -1
@@ -57,10 +64,10 @@ content:
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 90
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
 hidden:
   created: true

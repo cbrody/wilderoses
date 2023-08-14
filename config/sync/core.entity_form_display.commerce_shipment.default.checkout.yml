@@ -7,6 +7,13 @@ dependencies:
     - core.entity_form_mode.commerce_shipment.checkout
   module:
     - commerce_shipping
+    - field_layout
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 _core:
   default_config_hash: v-LWAtBhcDwpE5HlNPuwiNt7obeZPHwidGUYb_wnkQY
 id: commerce_shipment.default.checkout

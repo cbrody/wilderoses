@@ -6,6 +6,13 @@ dependencies:
     - commerce_product.commerce_product_variation_type.download
   module:
     - commerce_price
+    - field_layout
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: commerce_product_variation.download.default
 targetEntityType: commerce_product_variation
 bundle: download
@@ -13,22 +20,22 @@ mode: default
 content:
   list_price:
     type: commerce_price_default
-    weight: 0
-    region: content
     label: inline
     settings:
       strip_trailing_zeroes: false
       currency_display: symbol
     third_party_settings: {  }
-  price:
-    label: hidden
-    type: commerce_price_default
-    weight: 1
+    weight: 0
     region: content
+  price:
+    type: commerce_price_default
+    label: hidden
     settings:
       strip_trailing_zeroes: false
       currency_display: symbol
     third_party_settings: {  }
+    weight: 1
+    region: content
 hidden:
   product_id: true
   sku: true

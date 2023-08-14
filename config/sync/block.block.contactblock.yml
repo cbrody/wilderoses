@@ -12,20 +12,20 @@ dependencies:
 id: contactblock
 theme: wr_bootstrap_sass
 region: content
-weight: -11
+weight: -10
 provider: null
 plugin: 'block_content:1eeca268-e241-4042-a145-aa69c0b04cb5'
 settings:
   id: 'block_content:1eeca268-e241-4042-a145-aa69c0b04cb5'
   label: 'Contact block'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: /contact
     negate: false
     context_mapping: {  }
+    pages: /contact

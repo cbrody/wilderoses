@@ -5,7 +5,14 @@ dependencies:
   config:
     - field.field.user.user.commerce_remote_id
   module:
+    - field_layout
+    - layout_discovery
     - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 _core:
   default_config_hash: V51QPCKkgNREKtSmB9Iu2wmAMEpktVpnzklWaZV8UYo
 id: user.user.default

@@ -4,9 +4,9 @@ status: true
 dependencies: {  }
 id: shirt
 label: Shirt
+traits: {  }
+locked: false
 description: ''
 variationType: size
 multipleVariations: true
 injectVariationFields: true
-traits: {  }
-locked: false

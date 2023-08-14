@@ -6,6 +6,13 @@ dependencies:
     - commerce_store.commerce_store_type.online
   module:
     - address
+    - field_layout
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 _core:
   default_config_hash: 30MhLMHKK_rVi7HTPHSnAbpRmtAMtlsJ2O5IycfCkE0
 id: commerce_store.online.default
@@ -15,13 +22,17 @@ mode: default
 content:
   address:
     type: address_default
-    weight: 1
     label: above
     settings: {  }
     third_party_settings: {  }
+    weight: 1
     region: content
 hidden:
   billing_countries: true
   default_currency: true
+  is_default: true
   mail: true
   name: true
+  shipping_countries: true
+  timezone: true
+  uid: true

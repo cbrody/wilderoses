@@ -11,14 +11,14 @@ dependencies:
 id: socialicons
 theme: wr_bootstrap_sass
 region: footer_fifth
-weight: -9
+weight: -11
 provider: null
 plugin: 'block_content:c7cb7b3e-cf71-4648-bbf8-9bbeb3aa5e87'
 settings:
   id: 'block_content:c7cb7b3e-cf71-4648-bbf8-9bbeb3aa5e87'
-  label: 'Social icons'
-  provider: block_content
+  label: 'Follow us'
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full

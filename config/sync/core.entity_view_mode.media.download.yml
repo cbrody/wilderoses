@@ -1,0 +1,10 @@
+uuid: f7992f77-1172-452e-983a-d4c434562a3a
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.download
+label: EPK
+targetEntityType: media
+cache: true

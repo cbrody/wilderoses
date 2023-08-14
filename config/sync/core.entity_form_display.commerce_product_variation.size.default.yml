@@ -8,7 +8,14 @@ dependencies:
     - field.field.commerce_product_variation.size.weight
   module:
     - commerce_price
+    - field_layout
+    - layout_discovery
     - physical
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: commerce_product_variation.size.default
 targetEntityType: commerce_product_variation
 bundle: size
@@ -17,9 +24,9 @@ content:
   attribute_size:
     type: options_select
     weight: 1
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
   list_price:
     type: commerce_list_price
     weight: -1
@@ -42,19 +49,19 @@ content:
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 90
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   weight:
     type: physical_measurement_default
     weight: 91
+    region: content
     settings:
       default_unit: ''
       allow_unit_change: true
     third_party_settings: {  }
-    region: content
 hidden:
   created: true
   uid: true

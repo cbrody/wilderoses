@@ -1,4 +1,4 @@
-commerce_file_enable_download_limit: false
-commerce_file_download_limit: 100
 _core:
   default_config_hash: zcz8XtZ9GAiYe2mkg1wHUXiKJImZdXFVH-z-mUPCqfI
+commerce_file_enable_download_limit: false
+commerce_file_download_limit: 100

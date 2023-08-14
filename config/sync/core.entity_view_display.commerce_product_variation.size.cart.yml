@@ -6,6 +6,15 @@ dependencies:
     - commerce_product.commerce_product_variation_type.size
     - core.entity_view_mode.commerce_product_variation.cart
     - field.field.commerce_product_variation.size.attribute_size
+    - field.field.commerce_product_variation.size.weight
+  module:
+    - field_layout
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: commerce_product_variation.size.cart
 targetEntityType: commerce_product_variation
 bundle: size
@@ -13,22 +22,23 @@ mode: cart
 content:
   attribute_size:
     type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
     weight: 1
     region: content
-    label: hidden
-    settings:
-      link: true
-    third_party_settings: {  }
   product_id:
     type: entity_reference_label
-    weight: 0
-    region: content
     label: hidden
     settings:
       link: true
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   list_price: true
   price: true
   sku: true
   title: true
+  weight: true

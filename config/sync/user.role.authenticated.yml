@@ -1,7 +1,26 @@
 uuid: bf86c0f0-83b6-4e0b-8979-a89006bf3fe4
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.basic_html
+  module:
+    - comment
+    - commerce_checkout
+    - commerce_license
+    - commerce_order
+    - commerce_payment
+    - commerce_product
+    - commerce_store
+    - contact
+    - filter
+    - fontawesome
+    - google_analytics
+    - media
+    - protected_pages
+    - search
+    - shortcut
+    - system
 _core:
   default_config_hash: btW6TFHajhy7Eo6YUvdFiPh4TcPggo8GBXYctjV6zag
 id: authenticated
@@ -13,6 +32,8 @@ permissions:
   - 'access comments'
   - 'access commerce_store overview'
   - 'access content'
+  - 'access fontawesome additional settings'
+  - 'access protected page password screen'
   - 'access shortcuts'
   - 'access site-wide contact form'
   - 'manage own commerce_payment_method'
@@ -24,4 +45,5 @@ permissions:
   - 'view commerce_product'
   - 'view commerce_store'
   - 'view media'
+  - 'view own commerce_license'
   - 'view own commerce_order'

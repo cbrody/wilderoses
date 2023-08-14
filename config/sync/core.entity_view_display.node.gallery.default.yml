@@ -7,23 +7,30 @@ dependencies:
     - field.field.node.gallery.field_image
     - node.type.gallery
   module:
+    - field_layout
     - juicebox
+    - layout_discovery
     - text
     - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: node.gallery.default
 targetEntityType: node
 bundle: gallery
 mode: default
 content:
   body:
-    weight: 0
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    weight: 0
     region: content
   field_image:
-    weight: 1
+    type: juicebox_formatter
     label: hidden
     settings:
       image_style: juicebox_medium
@@ -38,16 +45,16 @@ content:
       jlib_showOpenButton: true
       jlib_showExpandButton: true
       jlib_showThumbsButton: true
+      jlib_useThumbDots: false
+      jlib_useFullscreenExpand: '0'
       manual_config: ''
-      incompatible_file_action: show_icon_and_link
+      custom_parent_classes: ''
+      apply_markup_filter: true
       linkurl_source: ''
       linkurl_target: _blank
-      custom_parent_classes: ''
-      jlib_useFullscreenExpand: '0'
-      jlib_useThumbDots: false
-      apply_markup_filter: true
+      incompatible_file_action: show_icon_and_link
     third_party_settings: {  }
-    type: juicebox_formatter
+    weight: 1
     region: content
 hidden:
   links: true

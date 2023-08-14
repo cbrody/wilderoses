@@ -12,20 +12,20 @@ dependencies:
 id: reviews
 theme: wr_bootstrap_sass
 region: content
-weight: -3
+weight: -2
 provider: null
 plugin: 'block_content:c13d61aa-567c-45ad-afea-27c9812e875c'
 settings:
   id: 'block_content:c13d61aa-567c-45ad-afea-27c9812e875c'
   label: Reviews
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: /about
     negate: false
     context_mapping: {  }
+    pages: /about

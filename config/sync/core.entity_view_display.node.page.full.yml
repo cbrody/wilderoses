@@ -12,9 +12,16 @@ dependencies:
     - node.type.page
   module:
     - audiofield
+    - field_layout
     - image
+    - layout_discovery
     - text
     - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 _core:
   default_config_hash: g1S3_GLaxq4l3I9RIca5Mlz02MxI2KmOquZpHw59akM
 id: node.page.full
@@ -23,63 +30,65 @@ bundle: page
 mode: full
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 1
-    region: content
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 1
+    region: content
   field_audio_file:
     type: audiofield_audioplayer
-    weight: 3
-    region: content
     label: hidden
     settings:
       audio_player: audiojs_audio_player
       audio_player_jplayer_theme: none
-      audio_player_wavesurfer_audiorate: '1'
-      audio_player_wavesurfer_autocenter: '1'
-      audio_player_wavesurfer_bargap: '0'
-      audio_player_wavesurfer_barheight: '1'
-      audio_player_wavesurfer_barwidth: ''
+      audio_player_wavesurfer_combine_files: false
+      audio_player_wavesurfer_audiorate: 1
+      audio_player_wavesurfer_autocenter: true
+      audio_player_wavesurfer_bargap: 0
+      audio_player_wavesurfer_barheight: 1
+      audio_player_wavesurfer_barwidth: null
       audio_player_wavesurfer_cursorcolor: '#000000'
-      audio_player_wavesurfer_cursorwidth: '1'
+      audio_player_wavesurfer_cursorwidth: 1
+      audio_player_wavesurfer_forcedecode: false
+      audio_player_wavesurfer_normalize: false
       audio_player_wavesurfer_progresscolor: '#000000'
+      audio_player_wavesurfer_responsive: false
       audio_player_wavesurfer_wavecolor: '#000000'
-      audio_player_wordpress_animation: '1'
+      audio_player_wordpress_combine_files: false
+      audio_player_wordpress_animation: true
       audio_player_soundmanager_theme: default
-      audio_player_initial_volume: '8'
-      audio_player_lazyload: '1'
-      audio_player_wavesurfer_combine_files: 0
-      audio_player_wavesurfer_forcedecode: 0
-      audio_player_wavesurfer_normalize: 0
-      audio_player_wavesurfer_responsive: 0
-      audio_player_wordpress_combine_files: 0
-      audio_player_autoplay: 0
-      download_button: 0
-      download_link: 0
+      audio_player_initial_volume: 8
+      audio_player_autoplay: false
+      audio_player_lazyload: true
+      download_button: false
+      download_link: false
     third_party_settings: {  }
+    weight: 3
+    region: content
   field_image:
-    weight: 0
+    type: image
     label: hidden
     settings:
-      image_style: full_width
       image_link: ''
+      image_style: full_width
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
-    type: image
+    weight: 0
     region: content
   field_video:
     type: entity_reference_entity_view
-    weight: 2
-    region: content
     label: hidden
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
-  links:
-    weight: 4
+    weight: 2
     region: content
+  links:
     settings: {  }
     third_party_settings: {  }
+    weight: 4
+    region: content
 hidden: {  }

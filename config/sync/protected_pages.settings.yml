@@ -1,0 +1,16 @@
+_core:
+  default_config_hash: mtrOBzlvDBXdkwi4lmDKH2S7qxEQo_8W2ca-vBEXLWE
+langcode: en
+password:
+  per_page_or_global: per_page_or_global
+  protected_pages_session_expire_time: '43200'
+  protected_pages_global_password: $S$ElZnlwMWIbOfKdL1rx4wjt4J3YibHCxjp.UoNTWKzaBypwXGxgZ.
+email:
+  subject: 'Please visit this new page'
+  body: "Dear friend,\r\n\r\nI just created a new page on my website and wanted to invite you to visit. The page is protected by password. Please find the details below:-\r\n\r\nPage Url = [protected-page-url]\r\n\r\nPage Password = password here\r\n\r\nThank you.\r\n[site-name]"
+others:
+  protected_pages_title: 'Protected content'
+  protected_pages_description: 'The page you are trying to view is password-protected. Please enter the password below to proceed, or contact info@wilderoses.com for more information.'
+  protected_pages_password_label: 'Enter password'
+  protected_pages_submit_button_text: Submit
+  protected_pages_incorrect_password_msg: 'Sorry, wrong password. Please try again.'

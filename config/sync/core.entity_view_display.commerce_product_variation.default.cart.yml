@@ -5,10 +5,21 @@ dependencies:
   config:
     - commerce_product.commerce_product_variation_type.default
     - core.entity_view_mode.commerce_product_variation.cart
+    - field.field.commerce_product_variation.default.field_meta
+    - field.field.commerce_product_variation.default.field_promoted
+    - field.field.commerce_product_variation.default.weight
+  module:
+    - field_layout
+    - layout_discovery
   enforced:
     module:
       - commerce_cart
       - commerce_product
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 _core:
   default_config_hash: 6GpSQzJM6086KplhyiaTF3ezvQ_ecs8bIcW4GQMzrJU
 id: commerce_product_variation.default.cart
@@ -18,14 +29,17 @@ mode: cart
 content:
   product_id:
     type: entity_reference_label
-    weight: 1
     label: hidden
     settings:
       link: true
     third_party_settings: {  }
+    weight: 1
     region: content
 hidden:
+  field_meta: true
+  field_promoted: true
   list_price: true
   price: true
   sku: true
   title: true
+  weight: true

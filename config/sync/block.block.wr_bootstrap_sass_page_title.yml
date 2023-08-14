@@ -11,17 +11,17 @@ _core:
 id: wr_bootstrap_sass_page_title
 theme: wr_bootstrap_sass
 region: content
-weight: -12
+weight: -11
 provider: null
 plugin: page_title_block
 settings:
   id: page_title_block
   label: 'Page title'
-  provider: core
   label_display: '0'
+  provider: core
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
     negate: true
     context_mapping: {  }
+    pages: '<front>'

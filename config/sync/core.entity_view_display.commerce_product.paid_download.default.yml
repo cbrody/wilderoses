@@ -10,55 +10,64 @@ dependencies:
     - field.field.commerce_product.paid_download.field_promoted
   module:
     - commerce_product
+    - field_layout
     - image
+    - layout_discovery
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: commerce_product.paid_download.default
 targetEntityType: commerce_product
 bundle: paid_download
 mode: default
 content:
   body:
-    label: hidden
     type: text_summary_or_trimmed
-    weight: 3
+    label: hidden
     settings:
       trim_length: 150
     third_party_settings: {  }
+    weight: 3
     region: content
   field_image:
-    weight: 1
+    type: image
     label: hidden
     settings:
-      image_style: ''
       image_link: content
+      image_style: ''
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
-    type: image
+    weight: 1
     region: content
   field_media:
     type: entity_reference_entity_view
-    weight: 4
     label: hidden
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
+    weight: 4
     region: content
   title:
-    label: hidden
     type: string
-    weight: 0
-    region: content
+    label: hidden
     settings:
       link_to_entity: true
     third_party_settings: {  }
+    weight: 0
+    region: content
   variations:
     type: commerce_add_to_cart
-    weight: 2
-    region: content
     label: hidden
     settings:
       combine: false
     third_party_settings: {  }
+    weight: 2
+    region: content
 hidden:
   created: true
   field_promoted: true

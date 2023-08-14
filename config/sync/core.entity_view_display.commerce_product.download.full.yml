@@ -9,59 +9,64 @@ dependencies:
     - field.field.commerce_product.download.field_file
     - field.field.commerce_product.download.field_image
   module:
+    - field_layout
     - file
-    - imagezoom
+    - image
+    - layout_discovery
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: commerce_product.download.full
 targetEntityType: commerce_product
 bundle: download
 mode: full
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 1
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 1
     region: content
   field_file:
-    weight: 3
+    type: file_default
     label: hidden
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
-    type: file_default
+    weight: 3
     region: content
   field_image:
-    weight: 2
-    label: hidden
+    type: image
+    label: above
     settings:
-      imagezoom_zoom_type: lens
-      imagezoom_display_style: medium
-      imagezoom_zoom_style: ''
-      imagezoom_disable: true
-      imagezoom_disable_width: 480
-      imagezoom_additional: "responsive: true\r\nlensShape: round\r\nlensBorder: 0\r\nlensSize: 220\r\ncursor: pointer"
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
-    type: imagezoom
+    weight: 5
     region: content
   title:
-    label: hidden
     type: string
-    weight: 0
-    region: content
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 0
+    region: content
   variations:
     type: entity_reference_entity_view
-    weight: 4
-    region: content
     label: hidden
     settings:
-      link: true
       view_mode: default
+      link: true
     third_party_settings: {  }
+    weight: 4
+    region: content
 hidden:
   created: true
   stores: true

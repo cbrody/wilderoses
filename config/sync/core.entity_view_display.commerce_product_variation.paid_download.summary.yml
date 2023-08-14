@@ -8,21 +8,37 @@ dependencies:
     - field.field.commerce_product_variation.paid_download.commerce_file
     - field.field.commerce_product_variation.paid_download.license_expiration
     - field.field.commerce_product_variation.paid_download.license_type
+  module:
+    - field_layout
+    - file
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: commerce_product_variation.paid_download.summary
 targetEntityType: commerce_product_variation
 bundle: paid_download
 mode: summary
 content:
-  product_id:
-    type: entity_reference_label
+  commerce_file:
+    type: file_default
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
     weight: 0
     region: content
+  product_id:
+    type: entity_reference_label
     label: hidden
     settings:
       link: true
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
-  commerce_file: true
   license_expiration: true
   license_type: true
   list_price: true

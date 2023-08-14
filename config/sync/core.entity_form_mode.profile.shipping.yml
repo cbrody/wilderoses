@@ -2,11 +2,11 @@ uuid: 6004789d-9bfd-4333-8c34-45017c62321f
 langcode: en
 status: true
 dependencies:
+  module:
+    - profile
   enforced:
     module:
       - commerce_shipping
-  module:
-    - profile
 id: profile.shipping
 label: Shipping
 targetEntityType: profile

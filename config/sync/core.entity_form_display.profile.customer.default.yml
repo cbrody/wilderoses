@@ -5,11 +5,18 @@ dependencies:
   config:
     - field.field.profile.customer.address
     - profile.type.customer
+  module:
+    - address
+    - field_layout
+    - layout_discovery
   enforced:
     module:
       - commerce_order
-  module:
-    - address
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 _core:
   default_config_hash: 7mnnVkJkUSPhil9xoiTfdTivMqxCUloT_71AHWNUbJg
 id: profile.customer.default
@@ -20,8 +27,8 @@ content:
   address:
     type: address_default
     weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   is_default: true

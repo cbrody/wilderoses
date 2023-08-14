@@ -7,6 +7,13 @@ dependencies:
     - core.entity_view_mode.commerce_shipment.checkout
   module:
     - commerce_shipping
+    - field_layout
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 _core:
   default_config_hash: dDTsD9T8C6VLV2za6ysh2Xj5Q4yUwJSm-2yGtmdDt6Q
 id: commerce_shipment.default.checkout
@@ -15,15 +22,16 @@ bundle: default
 mode: checkout
 content:
   shipping_method:
-    label: above
     type: commerce_shipping_method
-    weight: 0
-    region: content
+    label: above
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   amount: true
   items: true
+  original_amount: true
   package_type: true
   shipping_profile: true
   state: true

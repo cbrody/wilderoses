@@ -9,48 +9,53 @@ dependencies:
     - field.field.commerce_product.shirt.field_image
   module:
     - commerce_product
-    - imagezoom
+    - field_layout
+    - image
+    - layout_discovery
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: commerce_product.shirt.full
 targetEntityType: commerce_product
 bundle: shirt
 mode: full
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 2
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 2
     region: content
   field_image:
-    weight: 1
-    label: hidden
+    type: image
+    label: above
     settings:
-      imagezoom_zoom_type: lens
-      imagezoom_display_style: medium
-      imagezoom_zoom_style: ''
-      imagezoom_disable: true
-      imagezoom_disable_width: 480
-      imagezoom_additional: "responsive: true\r\nlensShape: round\r\nlensBorder: 0\r\nlensSize: 220\r\ncursor: pointer"
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
-    type: imagezoom
+    weight: 11
     region: content
   title:
-    label: hidden
     type: string
-    weight: 0
-    region: content
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 0
+    region: content
   variations:
     type: commerce_add_to_cart
-    weight: 10
     label: hidden
     settings:
       combine: true
     third_party_settings: {  }
+    weight: 10
     region: content
 hidden:
   created: true

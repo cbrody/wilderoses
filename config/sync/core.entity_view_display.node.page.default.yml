@@ -9,10 +9,17 @@ dependencies:
     - field.field.node.page.field_video
     - node.type.page
   module:
+    - field_layout
     - file
     - image
+    - layout_discovery
     - text
     - user
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 _core:
   default_config_hash: g1S3_GLaxq4l3I9RIca5Mlz02MxI2KmOquZpHw59akM
 id: node.page.default
@@ -21,41 +28,43 @@ bundle: page
 mode: default
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 100
-    region: content
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 100
+    region: content
   field_audio_file:
-    weight: 104
+    type: file_default
     label: above
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
-    type: file_default
+    weight: 104
     region: content
   field_image:
-    weight: 102
+    type: image
     label: above
     settings:
-      image_style: ''
       image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
-    type: image
+    weight: 102
     region: content
   field_video:
     type: entity_reference_entity_view
-    weight: 103
     label: above
     settings:
       view_mode: full
       link: false
     third_party_settings: {  }
+    weight: 103
     region: content
   links:
-    weight: 101
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 101
+    region: content
 hidden: {  }

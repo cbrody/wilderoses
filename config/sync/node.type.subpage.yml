@@ -1,0 +1,18 @@
+uuid: 1f23919e-6b79-4c10-a393-8fa7c5703139
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Subpage item'
+type: subpage
+description: 'Content for display in sub-page tabs, e.g. epk docs'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

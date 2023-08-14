@@ -6,8 +6,16 @@ dependencies:
     - commerce_product.commerce_product_variation_type.size
     - core.entity_view_mode.commerce_product_variation.summary
     - field.field.commerce_product_variation.size.attribute_size
+    - field.field.commerce_product_variation.size.weight
   module:
     - commerce_price
+    - field_layout
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: commerce_product_variation.size.summary
 targetEntityType: commerce_product_variation
 bundle: size
@@ -15,23 +23,24 @@ mode: summary
 content:
   price:
     type: commerce_price_default
-    weight: 9
-    region: content
     label: hidden
     settings:
       strip_trailing_zeroes: false
       currency_display: symbol
     third_party_settings: {  }
+    weight: 9
+    region: content
   title:
     type: string
-    weight: 0
-    region: content
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   attribute_size: true
   list_price: true
   product_id: true
   sku: true
+  weight: true

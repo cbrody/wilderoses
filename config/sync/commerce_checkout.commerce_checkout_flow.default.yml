@@ -9,48 +9,49 @@ dependencies:
     - commerce_shipping
 _core:
   default_config_hash: wwkDVBiXUqSzRifJbb71ajFBklJdNJ_DgS67IF-_qgY
-id: default
 label: Default
+id: default
 plugin: multistep_default
 configuration:
   display_checkout_progress: true
   panes:
     login:
-      allow_guest_checkout: false
-      allow_registration: true
       step: login
       weight: 0
+      allow_guest_checkout: false
+      allow_registration: true
     contact_information:
-      double_entry: false
       step: order_information
       weight: 1
-    review:
-      step: review
-      weight: 3
-    completion_message:
-      step: complete
-      weight: 4
-    order_summary:
-      view: commerce_checkout_order_summary
-      step: _sidebar
-      weight: 5
-    completion_register:
-      step: complete
-      weight: 10
-    commerce_file_download:
-      step: complete
-      weight: 10
+      double_entry: false
     payment_information:
       step: order_information
-      weight: 10
-    payment_process:
-      capture: true
-      step: payment
-      weight: 10
-    paypal_checkout_payment_process:
-      step: payment
-      weight: 10
+      weight: 3
     shipping_information:
+      step: order_information
+      weight: 2
       require_shipping_profile: true
+    review:
+      step: review
+      weight: 4
+    payment_process:
+      step: payment
+      weight: 5
+      capture: true
+    completion_message:
+      step: complete
+      weight: 6
+    completion_register:
+      step: complete
+      weight: 7
+    commerce_file_download:
+      step: complete
+      weight: 8
+    order_summary:
+      step: _sidebar
+      weight: 9
+      view: commerce_checkout_order_summary
+    paypal_checkout_payment_process:
       step: _disabled
       weight: 10
+      capture: true

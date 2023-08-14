@@ -7,6 +7,13 @@ dependencies:
     - core.entity_view_mode.commerce_shipment.user
   module:
     - commerce_shipping
+    - field_layout
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 _core:
   default_config_hash: XJQGM6fyTMTrs5Qr6FeUtso_oU-lqce8NlK7P6mX9A8
 id: commerce_shipment.default.user
@@ -16,21 +23,22 @@ mode: user
 content:
   shipping_method:
     type: commerce_shipping_method
-    weight: 0
     label: above
     settings: {  }
     third_party_settings: {  }
+    weight: 0
     region: content
   tracking_code:
     type: commerce_tracking_link
-    weight: 1
     label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 1
     region: content
 hidden:
   amount: true
   items: true
+  original_amount: true
   package_type: true
   shipping_profile: true
   shipping_service: true

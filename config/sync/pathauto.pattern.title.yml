@@ -10,14 +10,14 @@ type: 'canonical_entities:node'
 pattern: '[node:title]'
 selection_criteria:
   8534e084-65ef-47b8-a79d-eac33940936e:
-    id: node_type
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 8534e084-65ef-47b8-a79d-eac33940936e
+    context_mapping:
+      node: node
     bundles:
       gallery: gallery
       page: page
-    negate: false
-    context_mapping:
-      node: node
-    uuid: 8534e084-65ef-47b8-a79d-eac33940936e
 selection_logic: and
 weight: -5
 relationships: {  }

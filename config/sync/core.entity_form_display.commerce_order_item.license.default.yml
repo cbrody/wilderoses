@@ -5,11 +5,18 @@ dependencies:
   config:
     - commerce_order.commerce_order_item_type.license
     - field.field.commerce_order_item.license.license
+  module:
+    - commerce_order
+    - field_layout
+    - layout_discovery
   enforced:
     module:
       - commerce_product
-  module:
-    - commerce_order
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 _core:
   default_config_hash: AI9120ApX7uexCUMTuO3RgE5bWu8175i_bNlPMRXe7M
 id: commerce_order_item.license.default
@@ -20,28 +27,28 @@ content:
   purchased_entity:
     type: entity_reference_autocomplete
     weight: 0
+    region: content
     settings:
       match_operator: CONTAINS
+      match_limit: 10
       size: 60
       placeholder: ''
-      match_limit: 10
     third_party_settings: {  }
-    region: content
   quantity:
     type: commerce_quantity
     weight: 1
+    region: content
     settings:
       placeholder: ''
       step: '1'
     third_party_settings: {  }
-    region: content
   unit_price:
     type: commerce_unit_price
     weight: 2
+    region: content
     settings:
       require_confirmation: true
     third_party_settings: {  }
-    region: content
 hidden:
   created: true
   license: true

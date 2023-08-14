@@ -5,25 +5,34 @@ dependencies:
   config:
     - commerce_product.commerce_product_variation_type.default
     - core.entity_view_mode.commerce_product_variation.grid
+    - field.field.commerce_product_variation.default.field_meta
     - field.field.commerce_product_variation.default.field_promoted
     - field.field.commerce_product_variation.default.weight
   module:
     - commerce_price
+    - field_layout
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: commerce_product_variation.default.grid
 targetEntityType: commerce_product_variation
 bundle: default
 mode: grid
 content:
   price:
-    label: hidden
     type: commerce_price_default
-    weight: 0
-    region: content
+    label: hidden
     settings:
       strip_trailing_zeroes: false
       currency_display: symbol
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
+  field_meta: true
   field_promoted: true
   list_price: true
   product_id: true

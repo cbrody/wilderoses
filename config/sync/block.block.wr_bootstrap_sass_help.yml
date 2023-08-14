@@ -11,12 +11,12 @@ _core:
 id: wr_bootstrap_sass_help
 theme: wr_bootstrap_sass
 region: content
-weight: -7
+weight: -6
 provider: null
 plugin: help_block
 settings:
   id: help_block
   label: Help
-  provider: help
   label_display: '0'
+  provider: help
 visibility: {  }

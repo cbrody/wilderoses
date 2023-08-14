@@ -1,0 +1,16 @@
+uuid: 42e0aa4b-ab4b-412c-a79a-1e5e4125b37e
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: rpwvgyEURXLz_JjgMCrkS1rUv-0k3L79BpO-ReN7fDI
+id: node
+label: Content
+tags:
+  image_src: '[node:field_image]'
+  canonical_url: '[node:url]'
+  description: '[node:summary]'
+  title: '[node:title] | [site:name]'
+  og_image: '[node:field_image], [commerce_product:field_image]'
+  og_title: '[node:title]'
+  og_image_alt: '[node:field_image:alt], [commerce_product:field_image:alt]'

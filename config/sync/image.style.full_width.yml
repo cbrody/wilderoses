@@ -6,10 +6,10 @@ name: full_width
 label: 'Full width'
 effects:
   39422e18-3f58-4ea1-997f-c26cc66f58bd:
-    uuid: 39422e18-3f58-4ea1-997f-c26cc66f58bd
     id: image_scale
-    weight: 1
     data:
       width: 1400
       height: null
       upscale: false
+    weight: 1
+    uuid: 39422e18-3f58-4ea1-997f-c26cc66f58bd

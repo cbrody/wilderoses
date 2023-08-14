@@ -9,14 +9,14 @@ _core:
 id: wr_bootstrap_sass_local_tasks
 theme: wr_bootstrap_sass
 region: content
-weight: -8
+weight: -7
 provider: null
 plugin: local_tasks_block
 settings:
   id: local_tasks_block
   label: Tabs
-  provider: core
   label_display: '0'
+  provider: core
   primary: true
   secondary: true
 visibility: {  }

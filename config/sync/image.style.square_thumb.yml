@@ -6,10 +6,10 @@ name: square_thumb
 label: 'Square thumb'
 effects:
   d7b052de-98bc-4e19-9521-7b463d33407b:
-    uuid: d7b052de-98bc-4e19-9521-7b463d33407b
     id: image_scale_and_crop
-    weight: 1
     data:
       width: 200
       height: 200
       anchor: center-center
+    weight: 1
+    uuid: d7b052de-98bc-4e19-9521-7b463d33407b

@@ -12,9 +12,16 @@ dependencies:
   module:
     - commerce
     - commerce_product
+    - field_layout
     - image
+    - layout_discovery
     - path
     - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
 id: commerce_product.paid_download.default
 targetEntityType: commerce_product
 bundle: paid_download
@@ -23,13 +30,13 @@ content:
   body:
     type: text_textarea_with_summary
     weight: 2
+    region: content
     settings:
       rows: 9
-      placeholder: ''
       summary_rows: 3
+      placeholder: ''
       show_summary: true
     third_party_settings: {  }
-    region: content
   created:
     type: datetime_timestamp
     weight: 7
@@ -37,30 +44,30 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_image:
+    type: image_image
     weight: 4
+    region: content
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-    type: image_image
-    region: content
   field_media:
+    type: entity_reference_autocomplete
     weight: 5
+    region: content
     settings:
       match_operator: CONTAINS
       match_limit: 10
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: entity_reference_autocomplete
-    region: content
   field_promoted:
+    type: boolean_checkbox
     weight: 9
+    region: content
     settings:
       display_label: true
     third_party_settings: {  }
-    type: boolean_checkbox
-    region: content
   path:
     type: path
     weight: 8
@@ -69,21 +76,21 @@ content:
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 10
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   stores:
     type: commerce_entity_select
     weight: 0
+    region: content
     settings:
       hide_single_entity: true
       autocomplete_threshold: 7
       autocomplete_size: 60
       autocomplete_placeholder: ''
     third_party_settings: {  }
-    region: content
   title:
     type: string_textfield
     weight: 1
@@ -98,14 +105,14 @@ content:
     region: content
     settings:
       match_operator: CONTAINS
+      match_limit: 10
       size: 60
       placeholder: ''
-      match_limit: 10
     third_party_settings: {  }
   variations:
     type: commerce_product_single_variation
     weight: 3
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden: {  }

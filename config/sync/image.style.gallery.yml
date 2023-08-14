@@ -6,10 +6,10 @@ name: gallery
 label: Gallery
 effects:
   eb9bf058-d8d2-4563-a870-4de42d462e92:
-    uuid: eb9bf058-d8d2-4563-a870-4de42d462e92
     id: image_scale
-    weight: 1
     data:
       width: null
       height: 400
       upscale: true
+    weight: 1
+    uuid: eb9bf058-d8d2-4563-a870-4de42d462e92

@@ -4,8 +4,8 @@ status: true
 dependencies: {  }
 id: size
 label: Size
-orderItemType: default
-generateTitle: true
 traits:
   - purchasable_entity_shippable
 locked: false
+orderItemType: default
+generateTitle: true

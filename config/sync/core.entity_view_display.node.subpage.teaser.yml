@@ -1,0 +1,40 @@
+uuid: e67ffb1f-fc0e-48b3-9cec-e169b5e6419d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.subpage.body
+    - field.field.node.subpage.field_media
+    - field.field.node.subpage.field_section
+    - image.style.square_thumb
+    - node.type.subpage
+  module:
+    - field_layout
+    - media
+    - user
+  theme:
+    - bootstrap_barrio
+third_party_settings:
+  field_layout:
+    id: barrio_cardbasic
+    settings:
+      label: ''
+id: node.subpage.teaser
+targetEntityType: node
+bundle: subpage
+mode: teaser
+content:
+  field_media:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: media
+      image_style: square_thumb
+    third_party_settings: {  }
+    weight: 0
+    region: first
+hidden:
+  body: true
+  field_section: true
+  links: true
