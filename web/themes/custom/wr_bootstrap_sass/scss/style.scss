@@ -190,3 +190,7 @@ img {
 div#block-subscriptionionos {
   max-height: 100px;
 }
+
+.button--primary {
+  @extend .btn-primary;
+}
