@@ -1,0 +1,25 @@
+uuid: dd7e23a5-0f8c-4c50-b68f-cf1ee7ca7092
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:2e36f3b4-5aa5-45aa-a37e-9608d524f76f'
+  module:
+    - block_content
+  theme:
+    - wr_bootstrap_sass
+id: subscriptionsib
+theme: wr_bootstrap_sass
+region: footer_first
+weight: 0
+provider: null
+plugin: 'block_content:2e36f3b4-5aa5-45aa-a37e-9608d524f76f'
+settings:
+  id: 'block_content:2e36f3b4-5aa5-45aa-a37e-9608d524f76f'
+  label: 'Subscription (SiB)'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

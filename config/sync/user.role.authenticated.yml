@@ -13,6 +13,7 @@ dependencies:
     - commerce_product
     - commerce_store
     - contact
+    - file
     - filter
     - fontawesome
     - google_analytics
@@ -36,6 +37,7 @@ permissions:
   - 'access protected page password screen'
   - 'access shortcuts'
   - 'access site-wide contact form'
+  - 'delete own files'
   - 'manage own commerce_payment_method'
   - 'opt-in or out of google analytics tracking'
   - 'post comments'
